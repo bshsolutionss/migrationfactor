@@ -53,3 +53,45 @@ footer{background:#153640;color:white}.footer-contact{background:#1b414b;border-
 .footer-credit a:hover{color:white;text-decoration:underline}
 @media(min-width:1024px){.topbar .topbar-phone{display:none}}
 @media(max-width:767px){.topbar{height:auto;padding-bottom:46px}.topbar .container{height:auto;min-height:38px;flex-wrap:wrap;gap:2px 12px;padding-block:8px}}
+
+/* Full-width navigation and a contact drawer, using the existing site content. */
+.topbar{height:56px}
+.header{height:106px;margin:0;background:white}
+.header .nav-shell{height:106px;min-height:106px;padding:12px 0;border-radius:0;box-shadow:none;gap:32px}
+.header.scrolled{box-shadow:0 6px 30px #08234818}
+.header.scrolled .nav-shell{box-shadow:none;border-radius:0}
+.header .brand-mark{width:80px;height:80px}
+#primary-nav{flex:1;justify-content:center;gap:28px}
+#primary-nav a{font-size:14px;text-transform:uppercase;letter-spacing:0;white-space:nowrap}
+.header-actions{display:flex;align-items:center;gap:30px;flex-shrink:0}
+.header .header-phone{display:flex;gap:14px}
+.header-phone-icon{display:block;width:58px;height:58px;flex:none;background:var(--primary);-webkit-mask:url('/brand/phone-blue.png') center/contain no-repeat;mask:url('/brand/phone-blue.png') center/contain no-repeat}
+.header-phone small{font-size:13px;line-height:1.6}
+.header-phone strong{font-size:18px;letter-spacing:.02em}
+.header .menu-toggle{display:none;align-items:center;justify-content:center;min-width:44px;height:44px;padding:8px;background:transparent;border:0}
+.hamburger{width:30px;height:20px;border-top:2px solid var(--dark);border-bottom:2px solid var(--dark);position:relative}
+.hamburger:after{content:'';position:absolute;top:7px;left:0;width:30px;height:2px;background:var(--dark)}
+.contact-drawer{position:fixed;inset:0 0 0 auto;margin:0;width:min(540px,100%);max-width:100%;height:100dvh;max-height:none;border:0;padding:0;background:white;color:var(--ink);overflow-y:auto;overscroll-behavior:contain}
+.contact-drawer::backdrop{background:#061d2ac2}
+.contact-drawer[open]{animation:drawer-in .3s var(--ease)}
+.drawer-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:30px 40px;background:var(--dark);color:white}
+.drawer-heading .brand{font-size:25px;letter-spacing:-1px;gap:12px;white-space:normal;min-width:0}
+.drawer-heading .brand-mark{width:64px;height:64px}
+.drawer-heading .brand span{color:white}
+.drawer-heading form{flex:none}
+.drawer-close{width:44px;height:44px;display:flex;align-items:center;justify-content:center;padding:0;border:1px solid #ffffff65;border-radius:50%;background:transparent;color:white;font-size:30px;line-height:1}
+.drawer-close:hover{background:#ffffff15}
+.drawer-body{padding:40px}
+.drawer-body>p{font-size:16px;line-height:1.9;margin-bottom:34px}
+.drawer-contact h3{font-size:15px;letter-spacing:0;text-transform:uppercase;margin:26px 0 8px}
+.drawer-contact p{margin:0 0 8px;font-size:16px}
+.drawer-contact a{display:block;font-size:16px;overflow-wrap:anywhere}
+.drawer-contact a:hover{color:var(--primary);text-decoration:underline}
+.drawer-contact .drawer-hours{margin-top:12px;color:var(--text)}
+.drawer-body>.button{margin-top:28px}
+.drawer-navigation{display:none}
+@keyframes drawer-in{from{transform:translateX(100%)}to{transform:translateX(0)}}
+@media(min-width:1024px) and (max-width:1199px){.header .nav-shell{gap:22px}#primary-nav{gap:18px}#primary-nav a{font-size:12px}.header-actions{gap:18px}.header-phone-icon{width:46px;height:46px}.header-phone strong{font-size:15px}.header-phone small{font-size:12px}}
+@media(max-width:1023px){.header,.header .nav-shell{height:90px;min-height:90px}.header .nav-shell{padding-block:9px}.header .brand-mark{width:72px;height:72px}#primary-nav{display:none}.header .menu-toggle{display:flex}.header-actions{margin-left:auto;gap:24px}.drawer-navigation{display:grid;margin-bottom:30px}.drawer-navigation a{padding:12px 0;border-bottom:1px solid var(--line);font-weight:800}.drawer-navigation a[aria-current]{color:var(--primary)}}
+@media(max-width:767px){.topbar{height:auto;padding-bottom:0}.header,.header .nav-shell{height:82px;min-height:82px}.header .nav-shell{padding:7px 0}.header .brand-mark{width:68px;height:68px}.header .header-phone{display:none}.drawer-heading{padding:22px 24px}.drawer-heading .brand{font-size:22px}.drawer-heading .brand-mark{width:52px;height:52px}.drawer-body{padding:28px 24px}}
+@media(max-width:359px){.drawer-heading{gap:12px;padding-inline:18px}.drawer-heading .brand{font-size:20px;gap:8px}.drawer-heading .brand-mark{width:44px;height:44px}}

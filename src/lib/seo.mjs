@@ -37,7 +37,7 @@ export function html(page, revision) {
  const social=`${origin}/brand/social.webp`;
  return `<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="icon" href="/brand/favicon.png"><meta name="theme-color" content="#087780">
+<link rel="icon" type="image/png" sizes="64x64" href="/brand/favicon.png"><meta name="theme-color" content="#087780">
 <title>${esc(title)}</title><meta name="description" content="${esc(description)}">
 <link rel="canonical" href="${canonical}">${page.noindex?'<meta name="robots" content="noindex,follow">':''}
 <meta property="og:type" content="website"><meta property="og:title" content="${esc(title)}">

@@ -38,6 +38,8 @@ The build recreates `dist/` from the curated sources, preventing stale demo page
 
 The homepage includes a three-step, 2-minute Visa Assessment after the pathway cards, linked from the hero. It shows a profile summary before collecting contact details and consent, then submits the answers in the existing enquiry `message` field. It does not calculate visa eligibility. The static site and Next.js app share the assessment markup, controller and CSS; conditional work and English-result answers are omitted when no longer relevant. Confirmation uses the backend's actual delivery status.
 
+The Next.js layout also imports the static site's canonical base and restoration styles, and both headers use the same dropdown and contact-drawer controller. Keep the original favicon, logo-only navbar and complete eight-card coaching composition synchronized between both builds.
+
 Copy `.env.example` to `.env` and set `SITE_URL` before building for a different public domain. Both the build and server read the same environment. The default domain comes from the supplied report.
 
 Validated enquiries are appended and flushed to private `data/enquiries.ndjson`. Consent, size limits, request-origin checks, a honeypot and rate limits are enforced. These records are never copied into `dist/` or served publicly. Tests use isolated temporary storage.

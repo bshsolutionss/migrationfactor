@@ -6,8 +6,8 @@ import { company } from '@/lib/constants';
 
 // Restore the source fade carousel using existing company copy, without demo reviews.
 const slides = [
-  { title: 'Guidance with purpose.', text: company.mission, label: 'OUR MISSION', photo: 'portraitYoungOne' },
-  { title: 'New beginnings beyond borders.', text: company.vision, label: 'OUR VISION', photo: 'portraitYoungTwo' },
+  { title: 'Guidance with purpose.', text: company.mission, label: 'OUR MISSION', photo: 'portraitProOne' },
+  { title: 'New beginnings beyond borders.', text: company.vision, label: 'OUR VISION', photo: 'portraitProTwo' },
 ];
 
 export default function SupportSection() {
@@ -35,7 +35,7 @@ export default function SupportSection() {
       onFocusCapture={() => setFocused(true)} onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget)) setFocused(false); }}>
       <div className="container support-content reveal">
         <div className="support-orbits" aria-hidden="true">
-          {['portraitYoungThree', 'portraitYoungFour', 'portraitYoungFive', 'portraitYoungSix'].map(name =>
+          {['portraitProThree', 'portraitProFour', 'portraitProFive', 'portraitProSix'].map(name =>
             <Image key={name} src={`/media/${name}.webp`} alt="" width={100} height={100} />)}
         </div>
         <div className="support-mark" aria-hidden="true"><Image src={`/media/${slides[active].photo}.webp`} alt="" width={200} height={200} /></div>

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
-import './globals.css';
+import '../../../src/styles/site.css';
 import '@/styles/motion.css';
-import '@/styles/restoration.css';
+import '../../../src/styles/restoration.css';
 import '../../../src/styles/assessment.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
@@ -15,6 +15,7 @@ export const metadata: Metadata = {
   description:
     'Migration Factor supports students, professionals and families with migration and visa guidance. Explore services, IELTS/PTE coaching and contact our team.',
   metadataBase: new URL('https://migrationfactor.com'),
+  icons: { icon: { url: '/brand/favicon.png', type: 'image/png', sizes: '64x64' } },
 };
 
 export default function RootLayout({
@@ -24,9 +25,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/brand/mark.webp" />
-      </head>
       <body id="top">
         <Header />
         <main id="main">{children}</main>

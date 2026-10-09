@@ -3,7 +3,28 @@
  addEventListener('scroll',scrollState,{passive:true});scrollState();
  const toggle=document.querySelector('.menu-toggle'), drawer=document.querySelector('#contact-drawer');
  let previousOverflow='';
+ const dropdownButtons=[...document.querySelectorAll('.nav-dropdown-toggle')];
+ const closeDropdowns=(except)=>dropdownButtons.forEach(button=>{
+  if(button===except)return;
+  button.setAttribute('aria-expanded','false');
+  document.getElementById(button.getAttribute('aria-controls')).hidden=true;
+ });
+ dropdownButtons.forEach(button=>button.addEventListener('click',()=>{
+  const open=button.getAttribute('aria-expanded')!=='true';
+  closeDropdowns(button);
+  button.setAttribute('aria-expanded',String(open));
+  document.getElementById(button.getAttribute('aria-controls')).hidden=!open;
+ }));
+ document.addEventListener('click',event=>{if(!event.target.closest('.nav-item'))closeDropdowns()});
+ document.addEventListener('keydown',event=>{
+  if(event.key!=='Escape')return;
+  const activeButton=dropdownButtons.find(button=>button.getAttribute('aria-expanded')==='true');
+  closeDropdowns();
+  if(activeButton)activeButton.focus();
+ });
+ matchMedia('(max-width:1023px)').addEventListener('change',()=>closeDropdowns());
  toggle.addEventListener('click',()=>{
+  closeDropdowns();
   previousOverflow=document.body.style.overflow;
   drawer.showModal();
   document.body.style.overflow='hidden';

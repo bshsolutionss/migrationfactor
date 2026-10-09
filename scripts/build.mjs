@@ -10,7 +10,8 @@ import {createHash} from 'node:crypto';
 await rm(new URL('../dist/',import.meta.url),{recursive:true,force:true});
 await mkdir('dist',{recursive:true});
 const script=await clientScript();
-const hash=createHash('sha256').update(await readFile('src/styles/site.css')).update(script);
+const styles=await readFile('src/styles/site.css','utf8')+'\n'+await readFile('src/styles/restoration.css','utf8');
+const hash=createHash('sha256').update(styles).update(script);
 for(const folder of ['media','brand'])for(const name of (await readdir('public/'+folder)).sort())hash.update(await readFile('public/'+folder+'/'+name));
 const revision=hash.digest('hex').slice(0,12);
 for(const p of pages){
@@ -18,7 +19,7 @@ for(const p of pages){
  const document=html(p,revision).replace(/((?:src|href)="\/(?:media|brand)\/[^"?]+)(")/g,`$1?v=${revision}$2`);
  await writeFile(dir+'index.html',document);
 }
-await copyFile('src/styles/site.css','dist/style.css');
+await writeFile('dist/style.css',styles);
 await writeFile('dist/site.js',script);
 for(const folder of ['media','brand','fonts'])await cp('public/'+folder,'dist/'+folder,{recursive:true});
 await writeFile('dist/sitemap.xml',`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${pages.filter(p=>!p.noindex).map(p=>`<url><loc>${origin}${p.path}</loc></url>`).join('')}</urlset>`);

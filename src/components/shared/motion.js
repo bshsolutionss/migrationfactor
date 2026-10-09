@@ -6,4 +6,21 @@
   document.querySelectorAll('.reveal,.split').forEach(el=>observer.observe(el));
  }
  const features=[...document.querySelectorAll('.feature')];features.forEach(el=>['mouseenter','focus'].forEach(event=>el.addEventListener(event,()=>features.forEach(x=>x.classList.toggle('active',x===el)))));
- document.querySelectorAll('.country-toggle').forEach(button=>button.addEventListener('click',()=>{const selected=button.closest('.country-row');document.querySelectorAll('.country-row').forEach(row=>{const active=row===selected;row.classList.toggle('selected',active);row.querySelector('button').setAttribute('aria-expanded',String(active));row.querySelector('.country-panel').hidden=!active})}));
+ const selectCountry=selected=>document.querySelectorAll('.country-row').forEach(row=>{const active=row===selected;row.classList.toggle('selected',active);row.querySelector('button').setAttribute('aria-expanded',String(active));row.querySelector('.country-panel').hidden=!active});
+ document.querySelectorAll('.country-toggle').forEach(button=>{
+  const activate=()=>selectCountry(button.closest('.country-row'));
+  button.addEventListener('click',activate);
+  button.addEventListener('focus',activate);
+  button.addEventListener('mouseenter',()=>{if(matchMedia('(hover: hover)').matches)activate()});
+ });
+ const selectCountryHash=()=>{const selected=[...document.querySelectorAll('.country-row')].find(row=>`#${row.id}`===location.hash);if(selected)selectCountry(selected)};
+ addEventListener('hashchange',selectCountryHash);selectCountryHash();
+ const selectCountryFromHash=()=>{
+  if(!/^#country-[A-Z]{2}$/.test(location.hash))return;
+  const panel=document.getElementById(location.hash.slice(1));
+  if(!panel)return;
+  panel.closest('.country-row').querySelector('.country-toggle').click();
+  panel.closest('.country-row').scrollIntoView({block:'start'});
+ };
+ addEventListener('hashchange',selectCountryFromHash);
+ selectCountryFromHash();

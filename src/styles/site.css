@@ -95,3 +95,75 @@ footer{background:#153640;color:white}.footer-contact{background:#1b414b;border-
 @media(max-width:1023px){.header,.header .nav-shell{height:90px;min-height:90px}.header .nav-shell{padding-block:9px}.header .brand-mark{width:72px;height:72px}#primary-nav{display:none}.header .menu-toggle{display:flex}.header-actions{margin-left:auto;gap:24px}.drawer-navigation{display:grid;margin-bottom:30px}.drawer-navigation a{padding:12px 0;border-bottom:1px solid var(--line);font-weight:800}.drawer-navigation a[aria-current]{color:var(--primary)}}
 @media(max-width:767px){.topbar{height:auto;padding-bottom:0}.header,.header .nav-shell{height:82px;min-height:82px}.header .nav-shell{padding:7px 0}.header .brand-mark{width:68px;height:68px}.header .header-phone{display:none}.drawer-heading{padding:22px 24px}.drawer-heading .brand{font-size:22px}.drawer-heading .brand-mark{width:52px;height:52px}.drawer-body{padding:28px 24px}}
 @media(max-width:359px){.drawer-heading{gap:12px;padding-inline:18px}.drawer-heading .brand{font-size:20px;gap:8px}.drawer-heading .brand-mark{width:44px;height:44px}}
+
+/* Reference footer composition, using Migration Factor's palette and content. */
+.site-footer{background:#153640;overflow:hidden}
+.site-footer .footer-contact{background:repeating-linear-gradient(135deg,transparent 0 9px,#45c7cd08 9px 11px),#173b45;border-bottom:1px solid #ffffff14}
+.site-footer .footer-contact>.container{grid-template-columns:32% 32% 36%}
+.site-footer .footer-contact .container>a,.site-footer .footer-contact .container>div{min-width:0;gap:18px;padding:35px 28px;font-size:15px;border:0;min-height:136px}
+.site-footer .footer-contact .container>a:first-child{padding-left:0;border-right:1px solid #ffffff20}
+.site-footer .footer-contact .icon{width:56px;height:56px;padding:17px;border:1px dashed #ffffff45;border-radius:50%;background:#ffffff05;color:white}
+.site-footer .footer-contact small{font-size:19px;font-weight:800;color:white;margin-bottom:3px}
+.site-footer .footer-contact span{min-width:0;overflow-wrap:anywhere}
+.footer-body{position:relative}
+.site-footer .footer-main{position:relative;display:grid;grid-template-columns:32% 18% 23% 27%;gap:0;padding-block:95px 85px;align-items:start}
+.site-footer .footer-main>div{padding-inline:28px;position:relative;z-index:1}
+.site-footer .footer-main .footer-brand-panel{padding-left:0;padding-right:38px;position:static;z-index:auto}
+.footer-brand-panel:before{content:'';position:absolute;inset:0 68% 0 -100vw;z-index:0;background:#1b414b;border-right:1px solid #ffffff20}
+.site-footer .footer-brand-panel>*:not(.footer-ornament){position:relative;z-index:1}
+.site-footer .footer-main .brand{margin-bottom:25px}
+.site-footer .footer-main h3{font-size:23px;letter-spacing:-.025em;margin-bottom:31px}
+.site-footer .footer-main p,.site-footer .footer-main>div>a:not(.brand){font-size:15px;line-height:1.9;color:#d4e4e8}
+.site-footer .footer-main>div>a:not(.brand){margin-bottom:15px}
+.site-footer .footer-main p{margin-bottom:23px}
+.site-footer .footer-main .footer-contact-link{font-size:14px;font-weight:700;color:white}
+.site-footer .footer-main a:hover{color:var(--cyan)}
+.site-footer .footer-main .footer-visit{display:flex;justify-content:center;align-items:center;gap:14px;border-radius:40px;padding:13px 18px;background:var(--primary);color:white;font-size:14px;font-weight:800;margin-top:28px;line-height:1.6;text-align:center;text-decoration:none;transition:background .2s}
+.site-footer .footer-main .footer-visit:hover{background:#096770;color:white}
+.footer-visit span,.footer-contact-link span{font-size:23px;line-height:1}
+.footer-plane{position:absolute;top:-63px;right:max(32px,calc((100vw - 1296px)/2));width:155px;height:155px;color:#e3f1f1;transform:rotate(-12deg);pointer-events:none;filter:drop-shadow(0 12px 10px #0002);z-index:2}
+.footer-ornament{position:absolute;left:-42px;bottom:0;width:215px;height:180px;pointer-events:none;opacity:.35;z-index:0}
+.footer-ornament>span{position:absolute;left:10px;top:8px;width:120px;height:120px;border:12px solid #45c7cd55;transform:rotate(30deg);border-radius:10px}
+.footer-ornament>i{position:absolute;left:100px;bottom:17px;width:44px;height:44px;border-radius:50%;background:var(--cyan)}
+.footer-ornament>b{position:absolute;left:151px;bottom:55px;width:54px;height:6px;border-radius:8px;background:var(--accent)}
+.footer-legal{position:relative;border-top:1px solid #ffffff20;background:#153640}
+.footer-legal>.container{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:22px;color:#c2d7dd;font-size:12px}
+.footer-legal a:hover{color:white;text-decoration:underline}
+@media(max-width:1279px){.site-footer .footer-main>div{padding-inline:20px}.site-footer .footer-main .footer-brand-panel{padding-right:28px}.site-footer .footer-main h3{font-size:21px}.site-footer .footer-main p,.site-footer .footer-main>div>a:not(.brand){font-size:14px}.site-footer .footer-contact .container>a,.site-footer .footer-contact .container>div{padding-inline:20px;font-size:14px;gap:13px}.site-footer .footer-contact .icon{width:48px;height:48px;padding:14px}.site-footer .footer-contact small{font-size:17px}}
+@media(max-width:1023px){.site-footer .footer-contact>.container{grid-template-columns:1fr 1fr}.site-footer .footer-contact .container>div:last-child{display:flex;grid-column:1/-1;border-top:1px solid #ffffff14;min-height:96px;padding:20px 0}.site-footer .footer-contact .container>a{padding-block:25px;min-height:110px}.site-footer .footer-main{grid-template-columns:1fr 1fr;gap:45px 35px;padding-block:70px 60px}.site-footer .footer-main>div,.site-footer .footer-main .footer-brand-panel{padding:0}.footer-brand-panel:before{right:calc(50% + 17.5px)}.footer-plane{width:120px;height:120px;right:18px;top:-40px}.footer-offices{max-width:350px}.footer-ornament{bottom:0}.site-footer .footer-main h3{font-size:23px}}
+@media(max-width:767px){.site-footer .footer-contact>.container{grid-template-columns:1fr}.site-footer .footer-contact .container>a,.site-footer .footer-contact .container>div:last-child{padding:22px 0;min-height:100px;border:0;border-bottom:1px solid #ffffff14;font-size:14px}.site-footer .footer-contact .container>a:first-child{border-right:0}.site-footer .footer-contact .container>div:last-child{grid-column:auto;border-bottom:0}.site-footer .footer-contact small{font-size:17px}.site-footer .footer-main{grid-template-columns:1fr 1fr;gap:36px 22px;padding-block:45px 45px}.site-footer .footer-main>div:first-child,.site-footer .footer-main>div:last-child{grid-column:1/-1}.footer-brand-panel:before{inset:0 -18px auto;height:320px;border-right:0;border-bottom:1px solid #ffffff14}.site-footer .footer-main .footer-brand-panel{padding-bottom:30px}.site-footer .footer-main .brand{margin-bottom:19px}.site-footer .footer-main .footer-logo{width:125px}.site-footer .footer-main p{font-size:14px;margin-bottom:16px}.site-footer .footer-main h3{font-size:20px;margin-bottom:24px}.site-footer .footer-main>div>a:not(.brand){font-size:13px;margin-bottom:12px}.footer-ornament{display:none}.footer-plane{width:88px;height:88px;right:20px;top:-33px}.footer-offices{max-width:none}.site-footer .footer-main .footer-visit{max-width:340px;margin-top:20px;font-size:14px}.footer-legal>.container{flex-wrap:wrap;justify-content:center;gap:5px 20px;padding-block:18px;text-align:center;font-size:11px}}
+@media(max-width:767px){.site-footer .footer-main .footer-brand-panel{position:relative}.footer-brand-panel:before{inset:-45px -18px 0;height:auto}.footer-legal>.container{flex-direction:column;padding-inline:32px}}
+/* Original airplane cutout from the supplied footer reference. */
+.site-footer .footer-plane{width:190px;height:auto;top:-65px;transform:none;object-fit:contain;filter:none}
+@media(max-width:1023px){.site-footer .footer-plane{width:140px;top:-45px}}
+@media(max-width:767px){.site-footer .footer-plane{width:100px;top:-30px}}
+@media(min-width:1024px){.site-footer .footer-plane{top:-105px;right:32px}}
+
+/* Keep the original navigation styling; change only its rounded floating shell. */
+.topbar{height:106px}
+.header{background:transparent;margin-top:-50px;margin-bottom:-56px}
+.header .nav-shell{padding-inline:28px;border-radius:13px;box-shadow:0 8px 35px #0527510a}
+.header.scrolled{box-shadow:none}
+.header.scrolled .nav-shell{border-radius:0 0 13px 13px;box-shadow:0 6px 30px #08234818}
+@media(max-width:1023px){.header{margin-bottom:-40px}.header .nav-shell{padding-inline:22px}}
+@media(max-width:767px){.topbar{padding-bottom:46px;height:auto}.header{margin-top:-46px;margin-bottom:-36px}.header .nav-shell{padding-inline:15px;border-radius:10px}}
+
+/* Functional dropdowns and desktop contact menu from the header reference. */
+.header .menu-toggle{display:flex}
+#primary-nav{gap:25px}
+.nav-item{position:relative}
+.nav-item-label{display:flex;align-items:center;gap:3px}
+.nav-dropdown-toggle{display:flex;align-items:center;justify-content:center;width:24px;height:32px;padding:0;border:0;background:transparent;color:var(--dark)}
+.nav-chevron{width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg) translateY(-2px);transition:transform .2s}
+.nav-dropdown-toggle[aria-expanded=true] .nav-chevron{transform:rotate(225deg) translate(-1px,-1px)}
+.nav-dropdown-toggle:hover,.nav-dropdown-toggle[aria-expanded=true]{color:var(--primary)}
+.nav-submenu{position:absolute;top:calc(100% + 20px);left:-20px;min-width:250px;max-width:320px;padding:12px 0;background:white;border-top:3px solid var(--primary);border-radius:0 0 8px 8px;box-shadow:0 12px 35px #08234824;max-height:calc(100dvh - 190px);overflow-y:auto}
+.nav-submenu[hidden]{display:none}
+#primary-nav .nav-submenu a{display:block;padding:9px 20px;font-size:13px;font-weight:600;text-transform:none;line-height:1.6;white-space:normal;border:0}
+#primary-nav .nav-submenu a:after{display:none}
+#primary-nav .nav-submenu a:hover,#primary-nav .nav-submenu a:focus-visible{background:var(--pale);color:var(--primary)}
+.header-actions{gap:25px}
+.drawer-navigation{display:grid;margin-bottom:30px}
+.drawer-navigation a{padding:12px 0;border-bottom:1px solid var(--line);font-weight:800}
+.drawer-navigation a[aria-current]{color:var(--primary)}
+@media(min-width:1024px) and (max-width:1199px){.header .header-phone{display:none}#primary-nav{gap:20px}}

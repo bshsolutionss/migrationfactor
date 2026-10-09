@@ -31,8 +31,9 @@ test('every generated page has SEO, valid internal destinations and existing ass
  assert.ok(!sitemap.includes('/404/'));
 });
 
-test('homepage preserves approved section order',()=>{
+test('homepage restores source section order using business content and excludes expert members',()=>{
  const home=pages.find(p=>p.path==='/').body;
  const sections=[...home.matchAll(/<section class="([^"]+)"/g)].map(m=>m[1]);
- assert.deepEqual(sections,['hero','features container','section about-section','section process-section','enquiry-section','section countries-section','section coaching-section','section cta-section','section articles-section']);
+ assert.deepEqual(sections,['hero','features container','section about-section','section process-section','enquiry-section','section countries-section','section coaching-section','section support-section','section cta-section','section articles-section']);
+ assert.doesNotMatch(home,/expert members|success rate|Jones Martin|Nazat Sarwar|Kevin Martin|50%/i);
 });

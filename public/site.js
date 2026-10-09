@@ -18,12 +18,47 @@ function validateEnquiryFields(input, serviceNames) {
  const header=document.querySelector('.header'), back=document.querySelector('.back-top');
  const scrollState=()=>{header.classList.toggle('scrolled',scrollY>40);back.classList.toggle('visible',scrollY>650)};
  addEventListener('scroll',scrollState,{passive:true});scrollState();
- const toggle=document.querySelector('.menu-toggle'), nav=document.querySelector('#primary-nav');
- const closeMenu=()=>{toggle.setAttribute('aria-expanded','false');nav.classList.remove('open');toggle.querySelector('.sr-only').textContent='Open navigation'};
- toggle.addEventListener('click',()=>{const open=toggle.getAttribute('aria-expanded')!=='true';toggle.setAttribute('aria-expanded',String(open));nav.classList.toggle('open',open);toggle.querySelector('.sr-only').textContent=open?'Close navigation':'Open navigation'});
- document.addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){closeMenu();toggle.focus()}});
- document.addEventListener('click',e=>{if(!header.contains(e.target))closeMenu()});
- matchMedia('(min-width:1024px)').addEventListener('change',closeMenu);
+ const toggle=document.querySelector('.menu-toggle'), drawer=document.querySelector('#contact-drawer');
+ let previousOverflow='';
+ const dropdownButtons=[...document.querySelectorAll('.nav-dropdown-toggle')];
+ const closeDropdowns=(except)=>dropdownButtons.forEach(button=>{
+  if(button===except)return;
+  button.setAttribute('aria-expanded','false');
+  document.getElementById(button.getAttribute('aria-controls')).hidden=true;
+ });
+ dropdownButtons.forEach(button=>button.addEventListener('click',()=>{
+  const open=button.getAttribute('aria-expanded')!=='true';
+  closeDropdowns(button);
+  button.setAttribute('aria-expanded',String(open));
+  document.getElementById(button.getAttribute('aria-controls')).hidden=!open;
+ }));
+ document.addEventListener('click',event=>{if(!event.target.closest('.nav-item'))closeDropdowns()});
+ document.addEventListener('keydown',event=>{
+  if(event.key!=='Escape')return;
+  const activeButton=dropdownButtons.find(button=>button.getAttribute('aria-expanded')==='true');
+  closeDropdowns();
+  if(activeButton)activeButton.focus();
+ });
+ matchMedia('(max-width:1023px)').addEventListener('change',()=>closeDropdowns());
+ toggle.addEventListener('click',()=>{
+  closeDropdowns();
+  previousOverflow=document.body.style.overflow;
+  drawer.showModal();
+  document.body.style.overflow='hidden';
+  toggle.setAttribute('aria-expanded','true');
+  toggle.querySelector('.sr-only').textContent='Close menu and contact details';
+ });
+ drawer.addEventListener('close',()=>{
+  document.body.style.overflow=previousOverflow;
+  toggle.setAttribute('aria-expanded','false');
+  toggle.querySelector('.sr-only').textContent='Open menu and contact details';
+  toggle.focus({preventScroll:true});
+ });
+ drawer.addEventListener('click',event=>{
+  if(event.target!==drawer)return;
+  const bounds=drawer.getBoundingClientRect();
+  if(event.clientX<bounds.left||event.clientX>bounds.right||event.clientY<bounds.top||event.clientY>bounds.bottom)drawer.close();
+ });
 
  // Headings retain their semantic text; only visual words are wrapped.
  if(!reduced && 'IntersectionObserver' in window){
@@ -33,7 +68,70 @@ function validateEnquiryFields(input, serviceNames) {
   document.querySelectorAll('.reveal,.split').forEach(el=>observer.observe(el));
  }
  const features=[...document.querySelectorAll('.feature')];features.forEach(el=>['mouseenter','focus'].forEach(event=>el.addEventListener(event,()=>features.forEach(x=>x.classList.toggle('active',x===el)))));
- document.querySelectorAll('.country-toggle').forEach(button=>button.addEventListener('click',()=>{const selected=button.closest('.country-row');document.querySelectorAll('.country-row').forEach(row=>{const active=row===selected;row.classList.toggle('selected',active);row.querySelector('button').setAttribute('aria-expanded',String(active));row.querySelector('.country-panel').hidden=!active})}));
+ const selectCountry=selected=>document.querySelectorAll('.country-row').forEach(row=>{const active=row===selected;row.classList.toggle('selected',active);row.querySelector('button').setAttribute('aria-expanded',String(active));row.querySelector('.country-panel').hidden=!active});
+ document.querySelectorAll('.country-toggle').forEach(button=>{
+  const activate=()=>selectCountry(button.closest('.country-row'));
+  button.addEventListener('click',activate);
+  button.addEventListener('focus',activate);
+  button.addEventListener('mouseenter',()=>{if(matchMedia('(hover: hover)').matches)activate()});
+ });
+ const selectCountryHash=()=>{const selected=[...document.querySelectorAll('.country-row')].find(row=>`#${row.id}`===location.hash);if(selected)selectCountry(selected)};
+ addEventListener('hashchange',selectCountryHash);selectCountryHash();
+ const selectCountryFromHash=()=>{
+  if(!/^#country-[A-Z]{2}$/.test(location.hash))return;
+  const panel=document.getElementById(location.hash.slice(1));
+  if(!panel)return;
+  panel.closest('.country-row').querySelector('.country-toggle').click();
+  panel.closest('.country-row').scrollIntoView({block:'start'});
+ };
+ addEventListener('hashchange',selectCountryFromHash);
+ selectCountryFromHash();
+
+// Source fade carousel, using existing company mission/vision copy.
+document.querySelectorAll('.support-section').forEach(section=>{
+ const slides=[...section.querySelectorAll('.support-slide')];
+ const buttons=[...section.querySelectorAll('[data-slide]')];
+ const pause=section.querySelector('.support-pause');
+ const preference=matchMedia('(prefers-reduced-motion: reduce)');
+ let active=0,manualPause=false,hovered=false,focused=false,timer;
+ const show=index=>{
+  active=index;
+  section.querySelector('.support-mark img').src=slides[active].dataset.portrait;
+  slides.forEach((slide,i)=>{slide.classList.toggle('active',i===active);slide.setAttribute('aria-hidden',String(i!==active))});
+  buttons.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===active)));
+ };
+ const update=()=>{
+  clearInterval(timer);
+  section.querySelector('.support-slides').setAttribute('aria-live',manualPause||focused||preference.matches?'polite':'off');
+  if(!manualPause&&!hovered&&!focused&&!preference.matches)timer=setInterval(()=>show((active+1)%slides.length),3000);
+ };
+ buttons.forEach((button,i)=>button.addEventListener('click',()=>show(i)));
+ pause.addEventListener('click',()=>{manualPause=!manualPause;pause.textContent=manualPause?'▶':'Ⅱ';pause.setAttribute('aria-label',manualPause?'Play slides':'Pause slides');update()});
+ section.addEventListener('mouseenter',()=>{hovered=true;update()});
+ section.addEventListener('mouseleave',()=>{hovered=false;update()});
+ section.addEventListener('focusin',()=>{focused=true;update()});
+ section.addEventListener('focusout',event=>{if(!section.contains(event.relatedTarget)){focused=false;update()}});
+ preference.addEventListener('change',update);
+ document.addEventListener('visibilitychange',()=>{if(document.hidden)clearInterval(timer);else update()});
+ update();
+});
+
+document.querySelectorAll('[data-service-count]').forEach(element=>{
+ const total=Number(element.dataset.serviceCount);
+ const preference=matchMedia('(prefers-reduced-motion: reduce)');
+ if(preference.matches||!('IntersectionObserver' in window))return;
+ let frame;
+ const observer=new IntersectionObserver(([entry])=>{
+  if(!entry.isIntersecting)return;
+  observer.disconnect();
+  const started=performance.now();
+  const tick=now=>{const progress=Math.min((now-started)/4000,1);element.textContent=String(Math.round(total*progress));if(progress<1)frame=requestAnimationFrame(tick)};
+  frame=requestAnimationFrame(tick);
+ });
+ observer.observe(element);
+ preference.addEventListener('change',()=>{if(preference.matches){cancelAnimationFrame(frame);element.textContent=String(total)}});
+});
+
 
  const selectedService=new URLSearchParams(location.search).get('service');
  document.querySelectorAll('.enquiry-form').forEach(form=>{

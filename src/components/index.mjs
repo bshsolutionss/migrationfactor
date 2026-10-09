@@ -18,3 +18,4 @@ export * from './sections/cta.mjs';
 export * from './sections/articles.mjs';
 export * from './sections/faqSection.mjs';
 export * from './sections/serviceGrid.mjs';
+export * from './sections/support.mjs';

@@ -12,7 +12,7 @@
     "check": "node --check server.mjs && npm run build && node --check dist/site.js && npm test"
   },
   "engines": {
-    "node": ">=22"
+    "node": ">=20"
   },
   "devDependencies": {
     "lighthouse": "^13.5.0"

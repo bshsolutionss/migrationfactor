@@ -22,9 +22,9 @@ export function createApp({dataDir=path.join(root,'data'),webhook=process.env.EN
    if(url.pathname==='/api/enquiries'){
     if(req.method!=='POST'){res.setHeader('Allow','POST');return json(res,405,{message:'Use POST to submit an enquiry.'})}
     if(!/^application\/json(?:;|$)/i.test(req.headers['content-type']||''))return json(res,415,{message:'JSON content is required.'});
-    if(req.headers.origin){let originHost;try{originHost=new URL(req.headers.origin).host}catch{}if(originHost!==req.headers.host)return json(res,403,{message:'Submit the form from this website.'})}
+    if(req.headers.origin){let originHost;try{originHost=new URL(req.headers.origin).host}catch{}const expectedHost=req.headers['x-forwarded-host']||req.headers.host;if(originHost&&expectedHost&&originHost!==expectedHost)return json(res,403,{message:'Submit the form from this website.'})}
     const now=Date.now();for(const [key,value] of limits)if(now-value.start>600000)limits.delete(key);
-    const ip=req.socket.remoteAddress||'local';const bucket=limits.get(ip)||{start:now,count:0};bucket.count++;limits.set(ip,bucket);
+    const forwarded=req.headers['x-forwarded-for'];const ip=(typeof forwarded==='string'?forwarded.split(',')[0].trim():'')||req.socket.remoteAddress||'local';const bucket=limits.get(ip)||{start:now,count:0};bucket.count++;limits.set(ip,bucket);
     if(bucket.count>rateLimit){res.setHeader('Retry-After',Math.ceil((600000-now+bucket.start)/1000));return json(res,429,{message:'Too many attempts. Please wait a few minutes or email info@migrationfactor.com.'})}
     const chunks=[];let size=0;for await(const chunk of req){size+=chunk.length;if(size>16384)return json(res,413,{message:'Your enquiry is too large. Please use fewer characters.'});chunks.push(chunk)}const raw=Buffer.concat(chunks).toString('utf8');
     let input;try{input=JSON.parse(raw)}catch{return json(res,400,{message:'Invalid request. Please try again.'})}

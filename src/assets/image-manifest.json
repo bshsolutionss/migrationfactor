@@ -1,0 +1,122 @@
+{
+  "hero": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/5.jpg",
+    "src": "/media/hero.webp",
+    "width": 1900,
+    "height": 950
+  },
+  "about": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/7.jpg",
+    "src": "/media/about.webp",
+    "width": 800,
+    "height": 800
+  },
+  "enquiry": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/11-4.png",
+    "src": "/media/enquiry.webp",
+    "width": 600,
+    "height": 872
+  },
+  "cta": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/6-2.png",
+    "src": "/media/cta.webp",
+    "width": 700,
+    "height": 729
+  },
+  "preparation": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/v2-633x402.jpg",
+    "src": "/media/preparation.webp",
+    "width": 633,
+    "height": 402
+  },
+  "documents": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/05/v1-1-633x402.jpg",
+    "src": "/media/documents.webp",
+    "width": 633,
+    "height": 402
+  },
+  "featureStudy": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/25.png",
+    "src": "/media/featureStudy.webp",
+    "width": 128,
+    "height": 128
+  },
+  "featureAppointment": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/26.png",
+    "src": "/media/featureAppointment.webp",
+    "width": 128,
+    "height": 128
+  },
+  "featureResources": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/27-3.png",
+    "src": "/media/featureResources.webp",
+    "width": 128,
+    "height": 128
+  },
+  "processOne": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/9-1.png",
+    "src": "/media/processOne.webp",
+    "width": 200,
+    "height": 200
+  },
+  "processTwo": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/10-2.png",
+    "src": "/media/processTwo.webp",
+    "width": 200,
+    "height": 200
+  },
+  "processThree": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/11-3.png",
+    "src": "/media/processThree.webp",
+    "width": 200,
+    "height": 200
+  },
+  "processTrack": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/43.png",
+    "src": "/media/processTrack.webp",
+    "width": 1900,
+    "height": 173
+  },
+  "flagAustralia": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/australia.png",
+    "src": "/media/flagAustralia.webp",
+    "width": 240,
+    "height": 240
+  },
+  "flagUK": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/uk.png",
+    "src": "/media/flagUK.webp",
+    "width": 160,
+    "height": 160
+  },
+  "flagCanada": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/canada.png",
+    "src": "/media/flagCanada.webp",
+    "width": 240,
+    "height": 240
+  },
+  "coachingIELTS": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/29.png",
+    "src": "/media/coachingIELTS.webp",
+    "width": 120,
+    "height": 120
+  },
+  "coachingPTE": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/31.png",
+    "src": "/media/coachingPTE.webp",
+    "width": 120,
+    "height": 120
+  },
+  "enquiryBackground": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/banner-4-1.jpg",
+    "src": "/media/enquiryBackground.webp",
+    "width": 1920,
+    "height": 1068
+  },
+  "countryPattern": {
+    "url": "https://wordpress.validthemes.net/visaco/wp-content/uploads/2025/07/44.png",
+    "src": "/media/countryPattern.webp",
+    "width": 1900,
+    "height": 171
+  }
+}

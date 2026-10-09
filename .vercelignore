@@ -1,0 +1,6 @@
+# Exclude server scripts, tests, and documentation from Vercel deployment
+server.mjs
+scripts/server.mjs
+tests/
+docs/
+nextjs-app/

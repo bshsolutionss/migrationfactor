@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {mkdtemp,readFile,rm} from 'node:fs/promises';
 import {tmpdir} from 'node:os';
 import path from 'node:path';
-import {createApp} from '../server.mjs';
+import {createApp} from '../scripts/server.mjs';
 import {validateEnquiry} from '../src/services/enquiries.mjs';
 const valid={name:'Test Enquiry',email:'test@example.com',phone:'',service:'Student Visa',message:'This is a local automated test.',consent:true};
 test('rejects missing consent, invented services, invalid email and oversized content',()=>{const {errors}=validateEnquiry({...valid,email:'wrong',service:'Fake service',consent:false,message:'x'.repeat(3001)});assert.deepEqual(Object.keys(errors).sort(),['consent','email','message','service'])});

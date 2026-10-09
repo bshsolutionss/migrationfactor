@@ -1,16 +1,18 @@
 import http from 'node:http';
-import './src/config/environment.mjs';
+import '../src/config/environment.mjs';
 import {networkInterfaces} from 'node:os';
 import {readFile,stat} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 import {randomUUID,createHash} from 'node:crypto';
 import {gzipSync} from 'node:zlib';
-import {validateEnquiry} from './src/services/enquiries.mjs';
-import {saveEnquiry} from './src/services/storage.mjs';
-import {forwardEnquiry} from './src/services/delivery.mjs';
-import {mimeTypes as types,securityHeaders as security} from './src/config/http.mjs';
-const root=path.dirname(fileURLToPath(import.meta.url));
+import {validateEnquiry} from '../src/services/enquiries.mjs';
+import {saveEnquiry} from '../src/services/storage.mjs';
+import {forwardEnquiry} from '../src/services/delivery.mjs';
+import {mimeTypes as types,securityHeaders as security} from '../src/config/http.mjs';
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+
 export function createApp({dataDir=path.join(root,'data'),webhook=process.env.ENQUIRY_WEBHOOK_URL||'',token=process.env.ENQUIRY_WEBHOOK_TOKEN||'',rateLimit=8}={}){
  const limits=new Map();const cache=new Map();
  const json=(res,status,data)=>{res.writeHead(status,{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'});res.end(JSON.stringify(data))};
@@ -47,4 +49,5 @@ export function createApp({dataDir=path.join(root,'data'),webhook=process.env.EN
   }catch(error){console.error('Request failed:',error.code||error.name);if(!res.headersSent)json(res,500,{message:'The server could not complete your request. Please email info@migrationfactor.com.'});else res.end()}
  });
 }
+
 if(process.argv[1]&&path.resolve(process.argv[1])===fileURLToPath(import.meta.url)){const port=Number(process.env.PORT||3000),host=process.env.HOST||'0.0.0.0';createApp().listen(port,host,()=>{console.log(`Migration Factor listening on ${host}:${port}`);for(const addresses of Object.values(networkInterfaces()))for(const address of addresses||[])if(address.family==='IPv4'&&!address.internal)console.log(`Network: http://${address.address}:${port}/`)})}

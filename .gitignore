@@ -5,3 +5,4 @@ tmp/
 .env
 *.log
 .vercel/
+nextjs-app/

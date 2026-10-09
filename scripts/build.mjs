@@ -33,4 +33,7 @@ try {
 await mkdir('docs',{recursive:true});
 await writeFile('docs/TODO.md',`# Content TODO\n\nSource: supplied PDF. Missing items are not invented.\n\n${todos.map(([n,d])=>`- **${n}:** ${d}`).join('\n')}\n`);
 await writeFile('docs/routes.json',JSON.stringify(pages.map(({path,name})=>({path,name})),null,2));
+try {
+ await cp('dist', 'public', {recursive: true});
+} catch {}
 console.log(`Built ${pages.length} pages with curated assets.`);

@@ -372,12 +372,12 @@ footer{background:#153640;color:white}.footer-contact{background:#1b414b;border-
 .coaching-section{scroll-margin-top:110px}
 
 /* Larger navbar logo, retaining the existing rounded shell and menu layout. */
-.header .nav-shell{padding-block:10px}
-.header .brand-mark{width:88px;height:88px}
-@media(min-width:1200px) and (max-width:1599px){.header .brand-mark{width:84px;height:84px}}
-@media(max-width:1199px){.header .nav-shell{padding-block:7px}.header .brand-mark{width:76px;height:76px}}
-@media(max-width:767px){.header .brand-mark{width:68px;height:68px}}
-@media(max-width:359px){.header .brand-mark{width:60px;height:60px}}
+.header .nav-shell{padding-block:8px}
+.header .brand-mark{width:92px;height:92px}
+@media(min-width:1200px) and (max-width:1599px){.header .brand-mark{width:88px;height:88px}}
+@media(max-width:1199px){.header .nav-shell{padding-block:5px}.header .brand-mark{width:80px;height:80px}}
+@media(max-width:767px){.header .brand-mark{width:72px;height:72px}}
+@media(max-width:359px){.header .brand-mark{width:64px;height:64px}}
 
 /* Shared by the static build and the Next.js app. */
 .visa-assessment-section{background:var(--pale);padding-block:95px;scroll-margin-top:115px}

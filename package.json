@@ -1,0 +1,20 @@
+{
+  "name": "migration-factor",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Migration Factor website. Business content sourced from the supplied report.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "node server.mjs",
+    "dev": "node scripts/build.mjs && node server.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check server.mjs && npm run build && node --check dist/site.js && npm test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "lighthouse": "^13.5.0"
+  }
+}

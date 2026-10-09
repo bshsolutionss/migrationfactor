@@ -1,0 +1,122 @@
+/* Source timings: animate.min.css (800ms / 20px), main.js (25ms word stagger),
+   style.css (250ms button fill / 350ms card effects). Layout and palette stay in globals.css. */
+.word-mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding-bottom: .1em;
+  margin-bottom: -.1em;
+}
+.word { display: inline-block; }
+.split.motion-ready .word { transform: translateY(100%); }
+.split.motion-ready.in-view .word, .hero .split .word {
+  animation-name: theme-word;
+  animation-duration: .5s;
+  animation-timing-function: cubic-bezier(.25, .46, .45, .94);
+  animation-fill-mode: both;
+}
+.reveal.motion-ready { opacity: 0; translate: 0 var(--reveal-y, 20px); }
+.reveal-down { --reveal-y: -20px; }
+.reveal.motion-ready.in-view { animation: theme-reveal .8s ease var(--delay, 0ms) both; }
+.hero .reveal { animation: theme-reveal .8s ease var(--delay, 0ms) both; }
+.enquiry-cutout, .cta-copy > .button { --delay: 100ms; }
+@keyframes theme-word {
+  from { transform: translateY(100%); }
+  to { transform: translateY(0); }
+}
+@keyframes theme-reveal {
+  from { opacity: 0; translate: 0 var(--reveal-y, 20px); }
+  to { opacity: 1; translate: 0 0; }
+}
+
+/* Keep the existing dots and label; the source fill sits behind them. */
+.button { transition: background .35s ease-in-out, color .35s ease-in-out, border-color .35s ease-in-out; }
+.button > span::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  width: 115%;
+  height: 150px;
+  z-index: -1;
+  pointer-events: none;
+  background: var(--dark);
+  transform: translateY(-45%) skew(25deg) scale(0);
+  transition: transform .25s ease-in-out;
+}
+.button.outline > span::before { background: var(--primary); }
+.button:is(:hover, :focus-visible):not(:disabled) { background: var(--primary); border-color: var(--dark); }
+.button.outline:is(:hover, :focus-visible):not(:disabled) { background: white; color: white; border-color: var(--primary); }
+.button:is(:hover, :focus-visible):not(:disabled) > span::before { transform: translateY(-45%) skew(25deg) scale(1.2); }
+
+.feature, .feature h2, .feature p, .feature .brand-icon, .feature-number span, .feature-number::before {
+  transition-duration: .35s;
+  transition-timing-function: ease-in-out;
+}
+.feature h2, .feature p { transition-property: color; }
+.feature-number span { transition-property: -webkit-text-stroke-color; }
+.feature-number::before { transition-property: background-color; }
+
+.coaching-card { position: relative; isolation: isolate; overflow: hidden; }
+.coaching-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: color-mix(in srgb, var(--cyan) 14%, white);
+  opacity: 0;
+  transform: scale(.6);
+  transition: transform .35s ease-in-out, opacity .35s ease-in-out;
+}
+.coaching-programs .coaching-card:is(:hover, :focus-visible) { background: var(--pale); transform: none; }
+.coaching-card:is(:hover, :focus-visible)::after { opacity: 1; transform: scale(1); }
+
+/* This reference variant has a card reveal, but no hover zoom on news images. */
+.article img { transition: none; }
+.article:hover img { transform: none; }
+
+/* Source country overlay rises by 110px; translate composes with the approved panel transform. */
+.country-panel { animation: panel-in .35s ease-in-out; }
+.country-toggle, .country-plus, .nav-shell { transition-timing-function: ease-in-out; }
+.country-plus { transition: transform .35s ease-in-out; }
+@keyframes panel-in {
+  from { opacity: 0; translate: 0 110px; }
+  to { opacity: 1; translate: 0 0; }
+}
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+.faq-list summary span { transition: transform .35s ease-in-out; }
+
+@media (max-width: 1023px) {
+  #primary-nav {
+    display: flex;
+    height: 0;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: height .35s ease, opacity .35s ease, visibility 0s .35s;
+  }
+  #primary-nav.open {
+    height: var(--menu-height);
+    visibility: visible;
+    opacity: 1;
+    overflow-y: auto;
+    pointer-events: auto;
+    transition: height .35s ease, opacity .35s ease, visibility 0s;
+  }
+}
+@media (max-width: 767px) {
+  @keyframes panel-in {
+    from { opacity: 0; translate: 0 20px; }
+    to { opacity: 1; translate: 0 0; }
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .reveal.motion-ready { opacity: 1; translate: none; }
+  .split.motion-ready .word, .hero .word { transform: none; }
+  .country-panel { translate: none; }
+  .article:hover img, .coaching-card:hover { transform: none; }
+}

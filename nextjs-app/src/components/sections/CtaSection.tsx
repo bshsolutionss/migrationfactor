@@ -1,0 +1,34 @@
+import React from 'react';
+import Image from 'next/image';
+import SiteImage from '@/components/ui/SiteImage';
+import Button from '@/components/ui/Button';
+import WordReveal from '@/components/shared/WordReveal';
+
+export default function CtaSection() {
+  return (
+    <section className="section cta-section">
+      <div className="container cta">
+        <div className="cta-wave" aria-hidden="true" />
+        <div className="cta-image">
+          <SiteImage slot="cta" className="cta-person reveal" />
+          <div className="cta-decorations" aria-hidden="true">
+            <Image className="cta-plane" src="/media/ctaPlane.webp" width={278} height={260} alt="" />
+            <span className="cta-landscape" />
+            <Image className="cta-stamp" src="/media/ctaStamp.webp" width={101} height={89} alt="" />
+            <Image className="cta-route" src="/media/ctaRoute.webp" width={263} height={73} alt="" />
+          </div>
+        </div>
+        <div className="cta-copy">
+          <span className="eyebrow light">PLAN YOUR NEXT STEP</span>
+          <h2 className="split">
+            <WordReveal>
+            Your future starts with <br />
+            the right destination.
+            </WordReveal>
+          </h2>
+          <Button text="Request an eligibility assessment" href="/contact/" className="reveal" />
+        </div>
+      </div>
+    </section>
+  );
+}

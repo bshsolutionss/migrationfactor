@@ -10,7 +10,7 @@ import {createHash} from 'node:crypto';
 await rm(new URL('../dist/',import.meta.url),{recursive:true,force:true});
 await mkdir('dist',{recursive:true});
 const script=await clientScript();
-const styles=await readFile('src/styles/site.css','utf8')+'\n'+await readFile('src/styles/restoration.css','utf8');
+const styles=await readFile('src/styles/site.css','utf8')+'\n'+await readFile('src/styles/restoration.css','utf8')+'\n'+await readFile('src/styles/assessment.css','utf8');
 const hash=createHash('sha256').update(styles).update(script);
 for(const folder of ['media','brand'])for(const name of (await readdir('public/'+folder)).sort())hash.update(await readFile('public/'+folder+'/'+name));
 const revision=hash.digest('hex').slice(0,12);

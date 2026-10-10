@@ -12,7 +12,7 @@ export default function HeroSection() {
         alt="Family with luggage at an airport"
         width={1900}
         height={950}
-        sizes="100vw"
+        sizes="(max-width: 767px) 1100px, 100vw"
         fetchPriority="high"
         priority
         loading="eager"

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Breadcrumb from '@/components/layout/Breadcrumb';
 import JsonLd from '@/components/shared/JsonLd';
-import { tools } from '@/features/immigration-tools/catalog';
+import { allTools as tools } from '@/features/immigration-tools/catalog';
 import { pageMetadata, pageSchema } from '@/lib/seo';
 import '@/styles/features.css';
 const title = 'Australian Migration Tools';

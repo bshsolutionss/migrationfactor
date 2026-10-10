@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { services, coaching, SITE_URL } from '@/lib/constants';
-import { tools } from '@/features/immigration-tools/catalog';
+import { allTools as tools } from '@/features/immigration-tools/catalog';
 
 
 

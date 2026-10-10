@@ -35,6 +35,8 @@ export default function ImmigrationTool({ slug }: { slug: ToolSlug }) {
       {result.checks && <><h3>What your answers indicate</h3><dl className="feature-summary">{result.checks.map(item => <div key={item.label}><dt>{item.label}<span className="tool-status">{item.status}</span></dt><dd>{item.detail}</dd></div>)}</dl></>}
       <ul>{result.notes.map(note => <li key={note}>{note}</li>)}</ul><p>You can edit any answer above and calculate again. Results are cleared when answers change.</p>
       <Link href="/consultation">Plan a free consultation</Link>
+      {slug === 'sponsorship-cost-estimator' && <p><Link href="/tools/applicant-cost-calculator">Calculate applicant visa charges separately</Link></p>}
+      {slug === 'applicant-cost-calculator' && <p><Link href="/tools/sponsorship-cost-estimator">Calculate employer sponsorship charges separately</Link></p>}
     </div>}
     <div className="tool-sources"><strong>Official references · checked {verifiedOn}</strong><ul>{toolSources[slug].map(([label, url]) => <li key={url}><a href={url} target="_blank" rel="noopener noreferrer">{label} (opens a new tab)</a></li>)}</ul><p>Rules and charges can change. Confirm the requirements at application time. This page does not collect or transmit your answers.</p><Link href="/tools">Explore all migration tools</Link></div>
   </div>;

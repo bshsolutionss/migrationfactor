@@ -10,7 +10,7 @@ export function pageMetadata(path: string, title: string, description: string): 
   const cleanTitle = title.replace(/\s*\| Migration Factor$/, '');
   const fullTitle = `${cleanTitle} | Migration Factor`;
   return {
-    title: cleanTitle, description,
+    title: path === '/' ? { absolute: fullTitle } : cleanTitle, description,
     alternates: { canonical: absoluteUrl(path) },
     openGraph: { type: 'website', locale: 'en_AU', siteName: company.name,
       url: absoluteUrl(path), title: fullTitle, description,

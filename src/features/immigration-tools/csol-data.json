@@ -1,0 +1,3401 @@
+{
+  "checked": "2026-10-10",
+  "sources": {
+    "sid": "https://www.legislation.gov.au/F2024L01620/2025-11-07/2025-11-07/text/original/epub/OEBPS/document_1/document_1.html",
+    "ens": "https://www.legislation.gov.au/F2024L01618/2026-03-28/2026-03-28/text/original/epub/OEBPS/document_1/document_1.html"
+  },
+  "occupations": [
+    {
+      "code": "111111",
+      "name": "Chief Executive or Managing Director",
+      "authority": "IML",
+      "sidCaveats": [
+        "1"
+      ],
+      "ensCaveats": [
+        "1"
+      ]
+    },
+    {
+      "code": "111211",
+      "name": "Corporate General Manager",
+      "authority": "IML",
+      "sidCaveats": [
+        "1"
+      ],
+      "ensCaveats": [
+        "1"
+      ]
+    },
+    {
+      "code": "121111",
+      "name": "Aquaculture Farmer",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "5"
+      ],
+      "ensCaveats": [
+        "5"
+      ]
+    },
+    {
+      "code": "121311",
+      "name": "Apiarist",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "5"
+      ],
+      "ensCaveats": [
+        "5"
+      ]
+    },
+    {
+      "code": "121313",
+      "name": "Dairy Cattle Farmer",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "5"
+      ],
+      "ensCaveats": [
+        "5"
+      ]
+    },
+    {
+      "code": "121315",
+      "name": "Goat Farmer",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "5"
+      ],
+      "ensCaveats": [
+        "5"
+      ]
+    },
+    {
+      "code": "121318",
+      "name": "Pig Farmer",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "5"
+      ],
+      "ensCaveats": [
+        "5"
+      ]
+    },
+    {
+      "code": "121321",
+      "name": "Poultry Farmer",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "5"
+      ],
+      "ensCaveats": [
+        "5"
+      ]
+    },
+    {
+      "code": "121611",
+      "name": "Flower Grower",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "5"
+      ],
+      "ensCaveats": [
+        "5"
+      ]
+    },
+    {
+      "code": "131112",
+      "name": "Sales and Marketing Manager",
+      "authority": "IML",
+      "sidCaveats": [
+        "6",
+        "12"
+      ],
+      "ensCaveats": [
+        "6",
+        "12"
+      ]
+    },
+    {
+      "code": "131113",
+      "name": "Advertising Manager",
+      "authority": "IML",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "132111",
+      "name": "Corporate Services Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "12"
+      ],
+      "ensCaveats": [
+        "12"
+      ]
+    },
+    {
+      "code": "132211",
+      "name": "Finance Manager",
+      "authority": "CAANZ, CPAA, IPA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "132311",
+      "name": "Human Resource Manager",
+      "authority": "IML",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "132411",
+      "name": "Policy and Planning Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "132511",
+      "name": "Research and Development Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "133111",
+      "name": "Construction Project Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "133112",
+      "name": "Project Builder",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "133211",
+      "name": "Engineering Manager",
+      "authority": "EA, IML",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "133511",
+      "name": "Production Manager (Forestry)",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "133512",
+      "name": "Production Manager (Manufacturing)",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "133611",
+      "name": "Supply and Distribution Manager",
+      "authority": "IML",
+      "sidCaveats": [
+        "6",
+        "12"
+      ],
+      "ensCaveats": [
+        "6",
+        "12"
+      ]
+    },
+    {
+      "code": "133612",
+      "name": "Procurement Manager",
+      "authority": "IML",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "134211",
+      "name": "Medical Administrator \\ Medical Superintendent",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "134212",
+      "name": "Nursing Clinical Director",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "134213",
+      "name": "Primary Health Organisation Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "134311",
+      "name": "School Principal",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "134411",
+      "name": "Faculty Head",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "134499",
+      "name": "Education Managers nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "135111",
+      "name": "Chief Information Officer",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "135112",
+      "name": "ICT Project Manager",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "135199",
+      "name": "ICT Managers nec",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "139911",
+      "name": "Arts Administrator or Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "139912",
+      "name": "Environmental Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "139913",
+      "name": "Laboratory Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "139916",
+      "name": "Quality Assurance Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "139917",
+      "name": "Regulatory Affairs Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "141311",
+      "name": "Hotel or Motel Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "5"
+      ],
+      "ensCaveats": [
+        "5"
+      ]
+    },
+    {
+      "code": "141411",
+      "name": "Licensed Club Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "141999",
+      "name": "Accommodation and Hospitality Managers nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "142111",
+      "name": "Retail Manager (General)",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "142116",
+      "name": "Travel Agency Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "149411",
+      "name": "Fleet Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "149911",
+      "name": "Boarding Kennel or Cattery Operator",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "149912",
+      "name": "Cinema or Theatre Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "149915",
+      "name": "Equipment Hire Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "149999",
+      "name": "Hospitality, Retail and Service Managers nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "16"
+      ],
+      "ensCaveats": [
+        "16"
+      ]
+    },
+    {
+      "code": "211212",
+      "name": "Music Director",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "212111",
+      "name": "Artistic Director",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "212315",
+      "name": "Program Director (Television or Radio)",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "212316",
+      "name": "Stage Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "212317",
+      "name": "Technical Director",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "212318",
+      "name": "Video Producer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "212413",
+      "name": "Print Journalist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "212414",
+      "name": "Radio Journalist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "212415",
+      "name": "Technical Writer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "212416",
+      "name": "Television Journalist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "212499",
+      "name": "Journalists and Other Writers nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "221111",
+      "name": "Accountant (General)",
+      "authority": "CAANZ, CPAA, IPA",
+      "sidCaveats": [
+        "2",
+        "11",
+        "13"
+      ],
+      "ensCaveats": [
+        "2",
+        "11",
+        "13"
+      ]
+    },
+    {
+      "code": "221112",
+      "name": "Management Accountant",
+      "authority": "CAANZ, CPAA, IPA",
+      "sidCaveats": [
+        "2",
+        "11",
+        "13"
+      ],
+      "ensCaveats": [
+        "2",
+        "11",
+        "13"
+      ]
+    },
+    {
+      "code": "221113",
+      "name": "Taxation Accountant",
+      "authority": "CAANZ, CPAA, IPA",
+      "sidCaveats": [
+        "2",
+        "11",
+        "13"
+      ],
+      "ensCaveats": [
+        "2",
+        "11",
+        "13"
+      ]
+    },
+    {
+      "code": "221211",
+      "name": "Company Secretary",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "221213",
+      "name": "External Auditor",
+      "authority": "CAANZ, CPAA, IPA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "221214",
+      "name": "Internal Auditor",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "222112",
+      "name": "Finance Broker",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "222113",
+      "name": "Insurance Broker",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "222311",
+      "name": "Financial Investment Adviser",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "223111",
+      "name": "Human Resource Adviser",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "2"
+      ],
+      "ensCaveats": [
+        "2"
+      ]
+    },
+    {
+      "code": "223112",
+      "name": "Recruitment Consultant",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "11",
+        "13"
+      ],
+      "ensCaveats": [
+        "11",
+        "13"
+      ]
+    },
+    {
+      "code": "223113",
+      "name": "Workplace Relations Adviser",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "5"
+      ],
+      "ensCaveats": [
+        "5"
+      ]
+    },
+    {
+      "code": "224111",
+      "name": "Actuary",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "224112",
+      "name": "Mathematician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "224114",
+      "name": "Data Analyst",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "224115",
+      "name": "Data Scientist",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "224116",
+      "name": "Statistician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "224511",
+      "name": "Land Economist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "224512",
+      "name": "Valuer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "224712",
+      "name": "Organisation and Methods Analyst",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "224713",
+      "name": "Management Consultant",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "11",
+        "13"
+      ],
+      "ensCaveats": [
+        "11",
+        "13"
+      ]
+    },
+    {
+      "code": "224714",
+      "name": "Supply Chain Analyst",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "224914",
+      "name": "Patents Examiner",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "224999",
+      "name": "Information and Organisation Professionals nec",
+      "authority": "VETASSESS,",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "225111",
+      "name": "Advertising Specialist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "225113",
+      "name": "Marketing Specialist",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "6",
+        "11"
+      ],
+      "ensCaveats": [
+        "6",
+        "11"
+      ]
+    },
+    {
+      "code": "225114",
+      "name": "Content Creator (Marketing)",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "225211",
+      "name": "ICT Account Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "225212",
+      "name": "ICT Business Development Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "225213",
+      "name": "ICT Sales Representative",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "225311",
+      "name": "Public Relations Professional",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "225411",
+      "name": "Sales Representative (Industrial Products)",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "225412",
+      "name": "Sales Representative (Medical and Pharmaceutical Products)",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "225499",
+      "name": "Technical Sales Representatives nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "6"
+      ],
+      "ensCaveats": [
+        "6"
+      ]
+    },
+    {
+      "code": "231111",
+      "name": "Aeroplane Pilot",
+      "authority": "CASA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "231113",
+      "name": "Flying Instructor",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "231114",
+      "name": "Helicopter Pilot",
+      "authority": "CASA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "231199",
+      "name": "Air Transport Professionals nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "231212",
+      "name": "Ship's Engineer",
+      "authority": "AMSA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "232111",
+      "name": "Architect",
+      "authority": "AACA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "232112",
+      "name": "Landscape Architect",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "232212",
+      "name": "Surveyor",
+      "authority": "ISNSW",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "232213",
+      "name": "Cartographer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "232214",
+      "name": "Other Spatial Scientist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "232313",
+      "name": "Jewellery Designer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "232412",
+      "name": "Illustrator",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "232413",
+      "name": "Multimedia Designer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "232414",
+      "name": "Web Designer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "232511",
+      "name": "Interior Designer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "232611",
+      "name": "Urban and Regional Planner",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233111",
+      "name": "Chemical Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233112",
+      "name": "Materials Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233211",
+      "name": "Civil Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233212",
+      "name": "Geotechnical Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233213",
+      "name": "Quantity Surveyor",
+      "authority": "AIQS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233214",
+      "name": "Structural Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233215",
+      "name": "Transport Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233311",
+      "name": "Electrical Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233411",
+      "name": "Electronics Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233511",
+      "name": "Industrial Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233512",
+      "name": "Mechanical Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233513",
+      "name": "Production or Plant Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233611",
+      "name": "Mining Engineer (excluding Petroleum)",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233612",
+      "name": "Petroleum Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233911",
+      "name": "Aeronautical Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233912",
+      "name": "Agricultural Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233913",
+      "name": "Biomedical Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233914",
+      "name": "Engineering Technologist",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233915",
+      "name": "Environmental Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233916",
+      "name": "Naval Architect \\ Marine Designer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "233999",
+      "name": "Engineering Professionals nec",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234111",
+      "name": "Agricultural Consultant",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234114",
+      "name": "Agricultural Research Scientist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234115",
+      "name": "Agronomist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234116",
+      "name": "Aquaculture or Fisheries Scientist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234211",
+      "name": "Chemist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234212",
+      "name": "Food Technologist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234213",
+      "name": "Wine Maker",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234312",
+      "name": "Environmental Consultant",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234399",
+      "name": "Environmental Scientists nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234411",
+      "name": "Geologist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234412",
+      "name": "Geophysicist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234413",
+      "name": "Hydrogeologist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234511",
+      "name": "Life Scientist (General)",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234513",
+      "name": "Biochemist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234515",
+      "name": "Botanist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234516",
+      "name": "Marine Biologist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234521",
+      "name": "Entomologist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234522",
+      "name": "Zoologist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234599",
+      "name": "Life Scientists nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234612",
+      "name": "Respiratory Scientist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234711",
+      "name": "Veterinarian",
+      "authority": "AVBC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234911",
+      "name": "Conservator",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234912",
+      "name": "Metallurgist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234913",
+      "name": "Meteorologist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234914",
+      "name": "Physicist",
+      "authority": "ACPSEM, VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "234999",
+      "name": "Natural and Physical Science Professionals nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "241111",
+      "name": "Early Childhood (Pre-primary School) Teacher",
+      "authority": "ACECQA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "241213",
+      "name": "Primary School Teacher",
+      "authority": "AITSL",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "241311",
+      "name": "Middle School Teacher \\ Intermediate School Teacher",
+      "authority": "AITSL",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "241411",
+      "name": "Secondary School Teacher",
+      "authority": "AITSL",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "241511",
+      "name": "Special Needs Teacher",
+      "authority": "AITSL",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "241512",
+      "name": "Teacher of the Hearing Impaired",
+      "authority": "AITSL",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "241513",
+      "name": "Teacher of the Sight Impaired",
+      "authority": "AITSL",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "241599",
+      "name": "Special Education Teachers nec",
+      "authority": "AITSL",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "242111",
+      "name": "University Lecturer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "242211",
+      "name": "Vocational Education Teacher \\ Polytechnic Teacher",
+      "authority": "TRA, VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "249112",
+      "name": "Education Reviewer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "249214",
+      "name": "Music Teacher (Private Tuition)",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "249299",
+      "name": "Private Tutors and Teachers nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "14"
+      ],
+      "ensCaveats": [
+        "14"
+      ]
+    },
+    {
+      "code": "251111",
+      "name": "Dietitian",
+      "authority": "DAA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "251211",
+      "name": "Medical Diagnostic Radiographer",
+      "authority": "ASMIRT",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "251212",
+      "name": "Medical Radiation Therapist",
+      "authority": "ASMIRT",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "251213",
+      "name": "Nuclear Medicine Technologist",
+      "authority": "ANZSNM",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "251214",
+      "name": "Sonographer",
+      "authority": "ASMIRT",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "251312",
+      "name": "Occupational Health and Safety Adviser",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "251411",
+      "name": "Optometrist",
+      "authority": "OCANZ",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "251412",
+      "name": "Orthoptist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "251511",
+      "name": "Hospital Pharmacist",
+      "authority": "APharmC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "251512",
+      "name": "Industrial Pharmacist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "251513",
+      "name": "Retail Pharmacist",
+      "authority": "APharmC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "251912",
+      "name": "Orthotist or Prosthetist",
+      "authority": "AOPA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "251999",
+      "name": "Health Diagnostic and Promotion Professionals nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "252214",
+      "name": "Traditional Chinese Medicine Practitioner",
+      "authority": "CMBA",
+      "sidCaveats": [
+        "14"
+      ],
+      "ensCaveats": [
+        "14"
+      ]
+    },
+    {
+      "code": "252299",
+      "name": "Complementary Health Therapists nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "252311",
+      "name": "Dental Specialist",
+      "authority": "ADC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "252312",
+      "name": "Dentist",
+      "authority": "ADC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "252411",
+      "name": "Occupational Therapist",
+      "authority": "OTC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "252511",
+      "name": "Physiotherapist",
+      "authority": "APC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "252611",
+      "name": "Podiatrist",
+      "authority": "PodBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "252711",
+      "name": "Audiologist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "252712",
+      "name": "Speech Pathologist \\ Speech Language Therapist",
+      "authority": "SPA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253111",
+      "name": "General Practitioner",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253112",
+      "name": "Resident Medical Officer",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253211",
+      "name": "Anaesthetist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253311",
+      "name": "Specialist Physician (General Medicine)",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253312",
+      "name": "Cardiologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253313",
+      "name": "Clinical Haematologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253314",
+      "name": "Medical Oncologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253315",
+      "name": "Endocrinologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253316",
+      "name": "Gastroenterologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253317",
+      "name": "Intensive Care Specialist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253318",
+      "name": "Neurologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253321",
+      "name": "Paediatrician",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253322",
+      "name": "Renal Medicine Specialist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253323",
+      "name": "Rheumatologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253324",
+      "name": "Thoracic Medicine Specialist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253399",
+      "name": "Specialist Physicians nec",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253411",
+      "name": "Psychiatrist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253511",
+      "name": "Surgeon (General)",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253512",
+      "name": "Cardiothoracic Surgeon",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253513",
+      "name": "Neurosurgeon",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253514",
+      "name": "Orthopaedic Surgeon",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253515",
+      "name": "Otorhinolaryngologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253516",
+      "name": "Paediatric Surgeon",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253517",
+      "name": "Plastic and Reconstructive Surgeon",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253518",
+      "name": "Urologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253521",
+      "name": "Vascular Surgeon",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253911",
+      "name": "Dermatologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253912",
+      "name": "Emergency Medicine Specialist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253913",
+      "name": "Obstetrician and Gynaecologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253914",
+      "name": "Ophthalmologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253915",
+      "name": "Pathologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253917",
+      "name": "Diagnostic and Interventional Radiologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253918",
+      "name": "Radiation Oncologist",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "253999",
+      "name": "Medical Practitioners nec",
+      "authority": "MedBA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254111",
+      "name": "Midwife",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254211",
+      "name": "Nurse Educator",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254212",
+      "name": "Nurse Researcher",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254411",
+      "name": "Nurse Practitioner",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254412",
+      "name": "Registered Nurse (Aged Care)",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254413",
+      "name": "Registered Nurse (Child and Family Health)",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254414",
+      "name": "Registered Nurse (Community Health)",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254415",
+      "name": "Registered Nurse (Critical Care and Emergency)",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254416",
+      "name": "Registered Nurse (Developmental Disability)",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254417",
+      "name": "Registered Nurse (Disability and Rehabilitation)",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254418",
+      "name": "Registered Nurse (Medical)",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254421",
+      "name": "Registered Nurse (Medical Practice)",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254422",
+      "name": "Registered Nurse (Mental Health)",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254423",
+      "name": "Registered Nurse (Perioperative)",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254424",
+      "name": "Registered Nurse (Surgical)",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254425",
+      "name": "Registered Nurse (Paediatrics)",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "254499",
+      "name": "Registered Nurses nec",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "261111",
+      "name": "ICT Business Analyst",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "261112",
+      "name": "Systems Analyst",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "261211",
+      "name": "Multimedia Specialist",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "261212",
+      "name": "Web Developer",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "261311",
+      "name": "Analyst Programmer",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "261312",
+      "name": "Developer Programmer",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "261313",
+      "name": "Software Engineer",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "261314",
+      "name": "Software Tester",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "261315",
+      "name": "Cyber Security Engineer",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "261316",
+      "name": "Devops Engineer",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "261317",
+      "name": "Penetration Tester",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "261399",
+      "name": "Software and Applications Programmers nec",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "262111",
+      "name": "Database Administrator",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "262113",
+      "name": "Systems Administrator",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "262114",
+      "name": "Cyber Governance Risk and Compliance Specialist",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "262115",
+      "name": "Cyber Security Advice and Assessment Specialist",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "262116",
+      "name": "Cyber Security Analyst",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "262117",
+      "name": "Cyber Security Architect",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "262118",
+      "name": "Cyber Security Operations Coordinator",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "263111",
+      "name": "Computer Network and Systems Engineer",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "263112",
+      "name": "Network Administrator",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "263113",
+      "name": "Network Analyst",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "263211",
+      "name": "ICT Quality Assurance Engineer",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "263213",
+      "name": "ICT Systems Test Engineer",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "263299",
+      "name": "ICT Support and Test Engineers nec",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "263312",
+      "name": "Telecommunications Network Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "271111",
+      "name": "Barrister",
+      "authority": "SLAA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "271214",
+      "name": "Intellectual Property Lawyer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "271299",
+      "name": "Judicial and Other Legal Professionals nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "271311",
+      "name": "Solicitor",
+      "authority": "SLAA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "272112",
+      "name": "Drug and Alcohol Counsellor",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "272114",
+      "name": "Rehabilitation Counsellor",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "272115",
+      "name": "Student Counsellor",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "272311",
+      "name": "Clinical Psychologist",
+      "authority": "APS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "272312",
+      "name": "Educational Psychologist",
+      "authority": "APS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "272313",
+      "name": "Organisational Psychologist",
+      "authority": "APS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "272314",
+      "name": "Psychotherapist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "272399",
+      "name": "Psychologists nec",
+      "authority": "APS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "272413",
+      "name": "Translator",
+      "authority": "NAATI",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "272511",
+      "name": "Social Worker",
+      "authority": "AASW",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "272612",
+      "name": "Recreation Officer \\ Recreation Coordinator",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311112",
+      "name": "Agricultural and Agritech Technician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311113",
+      "name": "Animal Husbandry Technician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311114",
+      "name": "Aquaculture or Fisheries Technician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311115",
+      "name": "Irrigation Designer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311211",
+      "name": "Anaesthetic Technician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311212",
+      "name": "Cardiac Technician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311215",
+      "name": "Pharmacy Technician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311217",
+      "name": "Respiratory Technician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311299",
+      "name": "Medical Technicians nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311312",
+      "name": "Meat Inspector",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311314",
+      "name": "Primary Products Quality Assurance Officer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311399",
+      "name": "Primary Products Assurance and Inspection Officers nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311411",
+      "name": "Chemistry Technician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311412",
+      "name": "Earth Science Technician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "311499",
+      "name": "Science Technicians nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312111",
+      "name": "Architectural Draftsperson",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312112",
+      "name": "Building Associate",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312113",
+      "name": "Building Inspector",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312114",
+      "name": "Construction Estimator",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312116",
+      "name": "Surveying or Spatial Science Technician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312199",
+      "name": "Architectural, Building and Surveying Technicians nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312211",
+      "name": "Civil Engineering Draftsperson",
+      "authority": "EA, VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312212",
+      "name": "Civil Engineering Technician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312311",
+      "name": "Electrical Engineering Draftsperson",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312312",
+      "name": "Electrical Engineering Technician",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312412",
+      "name": "Electronic Engineering Technician",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312511",
+      "name": "Mechanical Engineering Draftsperson",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312512",
+      "name": "Mechanical Engineering Technician",
+      "authority": "TRA",
+      "sidCaveats": [
+        "9"
+      ],
+      "ensCaveats": [
+        "9"
+      ]
+    },
+    {
+      "code": "312911",
+      "name": "Maintenance Planner",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312912",
+      "name": "Metallurgical or Materials Technician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312913",
+      "name": "Mine Deputy",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312914",
+      "name": "Other Draftsperson",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "312999",
+      "name": "Building and Engineering Technicians nec",
+      "authority": "EA, VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "313111",
+      "name": "Hardware Technician",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "313112",
+      "name": "ICT Customer Support Officer",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "313113",
+      "name": "Web Administrator",
+      "authority": "ACS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "313199",
+      "name": "ICT Support Technicians nec",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "313212",
+      "name": "Telecommunications Field Engineer",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "313213",
+      "name": "Telecommunications Network Planner",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "313214",
+      "name": "Telecommunications Technical Officer or Technologist",
+      "authority": "EA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "321111",
+      "name": "Automotive Electrician",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "321211",
+      "name": "Motor Mechanic (General)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "321212",
+      "name": "Diesel Motor Mechanic",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "321213",
+      "name": "Motorcycle Mechanic",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "321214",
+      "name": "Small Engine Mechanic",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "322112",
+      "name": "Electroplater",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "322113",
+      "name": "Farrier",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "322114",
+      "name": "Metal Casting Trades Worker",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "322211",
+      "name": "Sheetmetal Worker",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "322311",
+      "name": "Metal Fabricator",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "322312",
+      "name": "Pressure Welder",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "322313",
+      "name": "Welder (First Class)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "323111",
+      "name": "Aircraft Maintenance Engineer (Avionics)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "323112",
+      "name": "Aircraft Maintenance Engineer (Mechanical)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "323113",
+      "name": "Aircraft Maintenance Engineer (Structures)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "323211",
+      "name": "Fitter (General)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "323212",
+      "name": "Fitter and Turner",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "323213",
+      "name": "Fitter-Welder",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "323214",
+      "name": "Metal Machinist (First Class)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "323215",
+      "name": "Textile, Clothing and Footwear Mechanic",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "323299",
+      "name": "Metal Fitters and Machinists nec",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "323313",
+      "name": "Locksmith",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "323314",
+      "name": "Precision Instrument Maker and Repairer",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "323411",
+      "name": "Engineering Patternmaker",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "323412",
+      "name": "Toolmaker",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "324111",
+      "name": "Panelbeater",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "324211",
+      "name": "Vehicle Body Builder",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "324212",
+      "name": "Vehicle Trimmer",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "324311",
+      "name": "Vehicle Painter",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "331111",
+      "name": "Bricklayer",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "331112",
+      "name": "Stonemason",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "331211",
+      "name": "Carpenter and Joiner",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "331212",
+      "name": "Carpenter",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "331213",
+      "name": "Joiner",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "332111",
+      "name": "Floor Finisher",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "332211",
+      "name": "Painter",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "333111",
+      "name": "Glazier",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "333211",
+      "name": "Plasterer (Wall and Ceiling)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "333212",
+      "name": "Renderer (Solid Plaster)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "333311",
+      "name": "Roof Tiler",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "333411",
+      "name": "Wall and Floor Tiler",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "334112",
+      "name": "Airconditioning and Mechanical Services Plumber",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "334113",
+      "name": "Drainer",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "334114",
+      "name": "Gasfitter",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "334115",
+      "name": "Roof Plumber",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "334116",
+      "name": "Plumber (General)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "334117",
+      "name": "Fire Protection Plumber",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "341111",
+      "name": "Electrician (General)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "341112",
+      "name": "Electrician (Special Class)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "342111",
+      "name": "Airconditioning and Refrigeration Mechanic",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "342211",
+      "name": "Electrical Linesworker \\ Electrical Line Mechanic",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "342212",
+      "name": "Technical Cable Jointer",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "342311",
+      "name": "Business Machine Mechanic",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "342313",
+      "name": "Electronic Equipment Trades Worker",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "342314",
+      "name": "Electronic Instrument Trades Worker (General)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "342315",
+      "name": "Electronic Instrument Trades Worker (Special Class)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "342411",
+      "name": "Cabler (Data and Telecommunications)",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "342412",
+      "name": "Telecommunications Cable Jointer",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "342413",
+      "name": "Telecommunications Linesworker \\ Telecommunications Line mechanic",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "342414",
+      "name": "Telecommunications Technician",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "351111",
+      "name": "Baker",
+      "authority": "TRA",
+      "sidCaveats": [
+        "10"
+      ],
+      "ensCaveats": [
+        "10"
+      ]
+    },
+    {
+      "code": "351112",
+      "name": "Pastrycook",
+      "authority": "TRA",
+      "sidCaveats": [
+        "10"
+      ],
+      "ensCaveats": [
+        "10"
+      ]
+    },
+    {
+      "code": "351211",
+      "name": "Butcher or Smallgoods Maker",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "351311",
+      "name": "Chef",
+      "authority": "TRA",
+      "sidCaveats": [
+        "3",
+        "4"
+      ],
+      "ensCaveats": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "code": "351411",
+      "name": "Cook",
+      "authority": "TRA",
+      "sidCaveats": [
+        "3",
+        "4"
+      ],
+      "ensCaveats": [
+        "3",
+        "4"
+      ]
+    },
+    {
+      "code": "361111",
+      "name": "Dog Handler or Trainer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "361112",
+      "name": "Horse Trainer",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "361311",
+      "name": "Veterinary Nurse",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "362411",
+      "name": "Nurseryperson",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "362511",
+      "name": "Arborist",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "362512",
+      "name": "Tree Worker",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "362711",
+      "name": "Landscape Gardener",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "362712",
+      "name": "Irrigation Technician",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "391111",
+      "name": "Hairdresser",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "392111",
+      "name": "Print Finisher",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "392112",
+      "name": "Screen Printer",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "392211",
+      "name": "Graphic Pre-press Trades Worker",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "392311",
+      "name": "Printing Machinist",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "393114",
+      "name": "Shoemaker",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "393311",
+      "name": "Upholsterer",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "394112",
+      "name": "Cabinet Maker",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "394113",
+      "name": "Furniture Maker",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "394211",
+      "name": "Furniture Finisher",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "394212",
+      "name": "Picture Framer",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "394213",
+      "name": "Wood Machinist",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "394299",
+      "name": "Wood Machinists and Other Wood Trades Workers nec",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399111",
+      "name": "Boat Builder and Repairer",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399112",
+      "name": "Shipwright",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399211",
+      "name": "Chemical Plant Operator",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399212",
+      "name": "Gas or Petroleum Operator",
+      "authority": "TRA",
+      "sidCaveats": [
+        "15"
+      ],
+      "ensCaveats": [
+        "15"
+      ]
+    },
+    {
+      "code": "399213",
+      "name": "Power Generation Plant Operator",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399513",
+      "name": "Light Technician",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399516",
+      "name": "Sound Technician",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399599",
+      "name": "Performing Arts Technicians nec",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399611",
+      "name": "Signwriter",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399911",
+      "name": "Diver",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399913",
+      "name": "Optical Dispenser \\ Dispensing Optician",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399914",
+      "name": "Optical Mechanic",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399916",
+      "name": "Plastics Technician",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399918",
+      "name": "Fire Protection Equipment Technician",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "399999",
+      "name": "Technicians and Trades Workers nec",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "411111",
+      "name": "Ambulance Officer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "411112",
+      "name": "Intensive Care Ambulance Paramedic",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "411211",
+      "name": "Dental Hygienist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "411212",
+      "name": "Dental Prosthetist",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "411213",
+      "name": "Dental Technician",
+      "authority": "TRA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "411214",
+      "name": "Dental Therapist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "411311",
+      "name": "Diversional Therapist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "411411",
+      "name": "Enrolled Nurse",
+      "authority": "ANMAC",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "411611",
+      "name": "Massage Therapist",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "7"
+      ],
+      "ensCaveats": [
+        "7"
+      ]
+    },
+    {
+      "code": "411711",
+      "name": "Community Worker",
+      "authority": "ACWA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "411713",
+      "name": "Family Support Worker",
+      "authority": "ACWA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "411715",
+      "name": "Residential Care Officer",
+      "authority": "ACWA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "411716",
+      "name": "Youth Worker",
+      "authority": "ACWA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "421111",
+      "name": "Child Care Worker",
+      "authority": "ACECQA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "421114",
+      "name": "Out of School Hours Care Worker",
+      "authority": "ACECQA",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "431411",
+      "name": "Hotel Service Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "451111",
+      "name": "Beauty Therapist",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "451412",
+      "name": "Tour Guide",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "451612",
+      "name": "Travel Consultant",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "451711",
+      "name": "Flight Attendant",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "452311",
+      "name": "Diving Instructor (Open Water)",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "452317",
+      "name": "Other Sports Coach or Instructor (Wushu Martial Arts Coach or Yoga Instructor Only)",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "14"
+      ],
+      "ensCaveats": [
+        "14"
+      ]
+    },
+    {
+      "code": "452321",
+      "name": "Sports Development Officer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "511111",
+      "name": "Contract Administrator",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "511112",
+      "name": "Program or Project Administrator",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "512111",
+      "name": "Office Manager",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "521212",
+      "name": "Legal Secretary",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "599111",
+      "name": "Conveyancer",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "599211",
+      "name": "Clerk of Court",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "599612",
+      "name": "Insurance Loss Adjuster",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "599915",
+      "name": "Clinical Coder",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "611211",
+      "name": "Insurance Agent",
+      "authority": "VETASSESS",
+      "sidCaveats": [],
+      "ensCaveats": []
+    },
+    {
+      "code": "639211",
+      "name": "Retail Buyer",
+      "authority": "VETASSESS",
+      "sidCaveats": [
+        "6"
+      ],
+      "ensCaveats": [
+        "6"
+      ]
+    }
+  ],
+  "caveats": {
+    "sid": {
+      "1": "(a) the position has nominated annual earnings of less than AUD180,001; and (b) if the nominee is to be transferred to fill the position—the transfer is not an intra‑corporate transfer to which an international trade obligation applies.",
+      "2": "The position is a clerical, bookkeeper or accounting clerk position.",
+      "3": "The position is involved in mass production in a factory setting.",
+      "4": "The position is in a limited service restaurant.",
+      "5": "The position predominantly involves responsibility for low‑skilled tasks. Example 1: Fruit picking or packing or feeding of livestock or animals. Example 2: Truck driving.",
+      "6": "The position: (a) is based in a front‑line retail setting; or (b) predominantly involves direct client transactional interaction on a regular basis; or (c) predominantly involves selling educational courses to individual students; or (d) is based in a call centre and does not require a significant technical knowledge of products.",
+      "7": "The position: (a) is not a full‑time position; or (b) is not based in a therapeutic setting; or (c) involves the provision of non‑medical relaxation massage; or (d) is in a retail setting.",
+      "8": "The position: (a) is not located in a commercial building or shopping centre environment; or (b) predominantly involves managing the provision of only one particular service to a facility or managing one particular relationship. Example: Managing the cleaning contract for a facility but not other contracts relevant to the facility.",
+      "9": "The position relates to retail mobile phone repairs or other small consumer mobile devices including tablets, smart watches, handheld gaming devices, portable media players etc.",
+      "10": "The position relates to mass or standardised production (as opposed to specialist production), including the following: (a) a position based in a franchise or factory; (b) a position that: (i) involves full or partial production of food product for distribution to another location; or (ii) predominantly involves the use of pre‑prepared food product from another location.",
+      "11": "The position is in a business that has an annual turnover of less than AUD1,000,000.",
+      "12": "(a) the position is in a business that has an annual turnover of less than AUD1,000,000; and (b) if the nominee is to be transferred to fill the position—the transfer is not an intra‑corporate transfer to which an international trade obligation applies. (c) the position is in a business that has fewer than 5 employees; and (i) if the nominee is to be transferred to fill the position—the transfer is not an intra‑corporate transfer to which an international trade obligation applies.",
+      "13": "The position is in a business that has fewer than 5 employees.",
+      "14": "The position is not provided for under an International Trade Obligation",
+      "15": "The position has nominated annual earnings of less than AUD120,000.",
+      "16": "The position is a brothel keeper."
+    },
+    "ens": {
+      "1": "(a) the position has nominated annual earnings of less than AUD180,001; and (b) if the nominee is to be transferred to fill the position—the transfer is not an intra‑corporate transfer to which an international trade obligation applies.",
+      "2": "The position is a clerical, bookkeeper or accounting clerk position.",
+      "3": "The position is involved in mass production in a factory setting.",
+      "4": "The position is in a limited service restaurant.",
+      "5": "The position predominantly involves responsibility for low‑skilled tasks. Example 1: Fruit picking or packing or feeding of livestock or animals. Example 2: Truck driving.",
+      "6": "The position: (a) is based in a front‑line retail setting; or (b) predominantly involves direct client transactional interaction on a regular basis; or (c) predominantly involves selling educational courses to individual students; or (d) is based in a call centre and does not require a significant technical knowledge of products.",
+      "7": "The position: (a) is not a full‑time position; or (b) is not based in a therapeutic setting; or (c) involves the provision of non‑medical relaxation massage; or (d) is in a retail setting.",
+      "8": "The position: (a) is not located in a commercial building or shopping centre environment; or (b) predominantly involves managing the provision of only one particular service to a facility or managing one particular relationship. Example: Managing the cleaning contract for a facility but not other contracts relevant to the facility.",
+      "9": "The position relates to retail mobile phone repairs or other small consumer mobile devices including tablets, smart watches, handheld gaming devices, portable media players, etc",
+      "10": "The position relates to mass or standardised production (as opposed to specialist production), including the following: (a) a position based in a franchise or factory; (b) a position that: (i) involves full or partial production of food product for distribution to another location; or (ii) predominantly involves the use of pre‑prepared food product from another location.",
+      "11": "The position is in a business that has an annual turnover of less than AUD1,000,000.",
+      "12": "(a) the position is in a business that has an annual turnover of less than AUD1,000,000; and (b) if the nominee is to be transferred to fill the position—the transfer is not an intra‑corporate transfer to which an international trade obligation applies. (c) the position is in a business that has fewer than 5 employees; and (i) if the nominee is to be transferred to fill the position—the transfer is not an intra‑corporate transfer to which an international trade obligation applies.",
+      "13": "The position is in a business that has fewer than 5 employees.",
+      "14": "The position is not provided for under an International Trade Obligation.",
+      "15": "The position has nominated annual earnings of less than AUD120,000.",
+      "16": "The position is a brothel keeper."
+    }
+  }
+}

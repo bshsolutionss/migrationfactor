@@ -8,6 +8,7 @@ export const tools = [
   { slug: 'applicant-cost-calculator', name: 'Applicant Visa Cost Estimator', description: 'Estimate first-instalment visa charges for a main applicant and accompanying family under subclasses 482, 186 and 494.' },
 ] as const;
 export type ToolSlug = typeof tools[number]['slug'];
+export const allTools = [...tools, { slug: 'occupation-search', name: 'CSOL Occupation Search', description: 'Search official Core Skills occupation titles and ANZSCO codes, with stream-specific caveats and 186 assessing authorities.' }] as const;
 export const verifiedOn = '2026-10-10';
 export const rulesEffectiveUntil = '2027-06-30';
 export const disclaimer = 'Preliminary guidance only, not a formal migration assessment. Results do not guarantee eligibility, an invitation or visa approval. Evidence, exemptions and your full circumstances must be checked. Answers stay in this page and are not submitted or stored.';

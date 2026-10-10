@@ -36,6 +36,7 @@ export default function AboutSection() {
             alt="Reference photograph of a visa consultant"
             width={800}
             height={800}
+            sizes="(max-width: 767px) calc(100vw - 36px), (max-width: 1199px) 45vw, 600px"
             loading="lazy"
             style={{ objectPosition: 'center' }}
           />

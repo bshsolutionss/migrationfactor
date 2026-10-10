@@ -41,6 +41,13 @@ try{
    const first=await page.$eval('.feature-fields select',e=>({name:e.name,value:e.options[2]?.value}));await page.select(`[name="${first.name}"]`,first.value);assert.equal(await page.$('.tool-result'),null);
    report.tools.push({slug,width,result:result.slice(0,180),editClearsResult:true});
   }
+  await page.goto(base+'/tools/occupation-search',{waitUntil:'networkidle0'});
+  await page.type('#occupation-query','261313');assert.equal(await page.$$('.occupation-results article').then(x=>x.length),1);assert.match(await page.$eval('.occupation-results',e=>e.innerText),/Software Engineer/);
+  await page.select('#occupation-stream','ens');assert.match(await page.$eval('.occupation-results',e=>e.innerText),/ACS/);
+  await page.click('#occupation-query',{clickCount:3});await page.keyboard.press('Backspace');await page.type('#occupation-query','111111');await page.click('.occupation-results summary');assert.match(await page.$eval('.occupation-results',e=>e.innerText),/180,001/);
+  await page.click('#occupation-query',{clickCount:3});await page.keyboard.press('Backspace');await page.type('#occupation-query','not-a-real-occupation-xyz');assert.equal(await page.$$('.occupation-results article').then(x=>x.length),0);
+  assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1),false);
+  report.tools.push({slug:'occupation-search',width,search:true,caveats:true,noMatches:true});
   await page.goto(base+'/consultation',{waitUntil:'networkidle0'});
   const posted=[];const onRequest=r=>{if(r.method()==='POST')posted.push(r.url())};page.on('request',onRequest);
   await page.click('.feature-workspace [type=submit]');assert.ok(await page.$('[aria-invalid=true]'));

@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Icon from '@/components/ui/Icon';
 import { company, navigation, services, countries } from '@/lib/constants';
-import { initSiteHeader } from '../../../../src/components/layout/header-client.mjs';
+import { initSiteHeader } from './header-client';
 
 function HeaderLogo({ drawer = false }: { drawer?: boolean }) {
   return (

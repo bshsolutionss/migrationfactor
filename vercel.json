@@ -1,8 +1,8 @@
 {
-  "framework": null,
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "cleanUrls": true,
+  "framework": "nextjs",
+  "buildCommand": "npm --prefix nextjs-app run build",
+  "outputDirectory": "nextjs-app/.next",
+  "installCommand": "npm --prefix nextjs-app install",
   "headers": [
     {
       "source": "/(.*)",

@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { visaAssessment } from '../../../../src/components/sections/visaAssessment.mjs';
-import { initVisaAssessment } from '../../../../src/lib/visa-assessment-client.mjs';
+import { visaAssessment } from './visaAssessment';
+import { initVisaAssessment } from '@/lib/visa-assessment-client';
 
 // Trusted, source-generated markup and behavior are shared with the Vercel static build.
 const markup = visaAssessment();

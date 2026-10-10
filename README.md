@@ -1,53 +1,38 @@
 # Migration Factor
 
-The approved website is preserved: section order, layout, spacing, image placements, navigation and animation behavior. This project uses pre-rendered HTML and a Node.js enquiry backend, with no client framework runtime. Requires Node.js 22 or later.
+The active website is a self-contained Next.js 16 App Router application in `nextjs-app/`. Preserve the approved UI, business content, header and animations when making changes.
+
+## Development and verification
 
 ```powershell
+npm run dev
 npm run build
 npm start
+npm run lint
 ```
 
-Open http://127.0.0.1:3000/ or the network URL printed by the server. Forms require the server; opening an HTML file directly does not run the backend.
+Root commands delegate to `nextjs-app`. The local server prints its URL; the default port is 3000. Run TypeScript and the existing animation regression checks inside the app:
 
-## Editing
+```powershell
+cd nextjs-app
+npx tsc --noEmit
+node --test tests/motion.test.mjs
+```
 
-- `src/constants/content.mjs`: business facts and copy derived from the supplied PDF; missing information stays in the private checklist.
-- `src/constants/navigation.mjs`: shared navigation.
-- `src/app/pages.mjs`: page composition and route descriptions.
-- `src/components/`: reusable layout, sections, forms, UI and shared rendering helpers.
-- `src/components/*/client.js`: browser behavior, combined at build time into one small deferred script.
-- `src/lib/`: SEO generation and shared browser/server validation.
-- `src/config/`: environment, domain, response headers and MIME types.
-- `src/services/`: enquiry validation, durable saving and optional delivery.
-- `src/assets/image-manifest.json`: editable image slots, dimensions and provenance.
-- `src/styles/site.css`: approved geometry, motion, breakpoints and logo-derived brand tokens.
-- `public/media/` and `public/brand/`: curated optimized runtime images.
-- `public/migrationfactor/`: preserved original user files; the build never copies these into the served website.
+## Active source
 
-Only actual, used modules are created. Empty framework folders and runtime dependencies are deliberately avoided. The static architecture was retained to honor the instruction to preserve the approved site rather than rebuild it.
+- `nextjs-app/src/app/`: pages, metadata and enquiry API handlers.
+- `nextjs-app/src/components/`: approved layout, sections and interactions.
+- `nextjs-app/src/lib/`: business constants, validation, assessment controller and enquiry persistence/delivery.
+- `nextjs-app/src/styles/`: site, restoration, motion and assessment styles.
+- `nextjs-app/public/`: media, branding, fonts and preserved source assets.
 
-## Branding and assets
+Application imports remain inside `nextjs-app`. Vercel uses the `nextjs` framework and `nextjs-app/.next`; root HTML output no longer shadows Next.js routes. Root `src/`, legacy generator scripts and static tests remain for historical reference and are excluded from the deployed application. Avoid running `static:build`, which recreates the retired static output.
 
-The supplied 3D logo provides the header mark and favicon. The supplied flat logo provides the social preview image. Original logo files remain intact. The primary teal `#087780`, cyan `#45c7cd`, blue `#2b90b8` and dark `#173b45` derive from the supplied visual identity; the darker primary supports readable white button text.
+## Enquiries
 
-Existing approved photographs and image positions are retained. Unused copied portraits, signatures, graphics, authoring scripts, duplicate images and obsolete styling were removed. No AI-generated assets were used. Optimized runtime media is approximately 529 KB, compared with 1.9 MB across the old 56 reference assets.
+Both the contact form and the three-step Visa Assessment submit JSON to `/api/enquiries`. The assessment presents existing guidance and collects profile details; it does not calculate visa eligibility. `/api/config` reports whether forwarding is configured.
 
-The build recreates `dist/` from the curated sources, preventing stale demo pages or assets from surviving a new build. CSS, JavaScript and images receive a content revision for safe browser caching. HTML remains revalidated.
+Validated enquiries are saved to private `enquiries.ndjson` files. `DATA_DIR` overrides the default local data directory. On Vercel, the fallback is temporary storage; configure an HTTPS `ENQUIRY_WEBHOOK_URL` for external delivery, with optional `ENQUIRY_WEBHOOK_TOKEN`. The UI reports the backend's actual delivery result and never claims unconfigured email delivery. Do not put enquiry records or environment secrets in Git.
 
-## Configuration and enquiries
-
-The homepage includes a three-step, 2-minute Visa Assessment after the pathway cards, linked from the hero. It shows a profile summary before collecting contact details and consent, then submits the answers in the existing enquiry `message` field. It does not calculate visa eligibility. The static site and Next.js app share the assessment markup, controller and CSS; conditional work and English-result answers are omitted when no longer relevant. Confirmation uses the backend's actual delivery status.
-
-The Next.js layout also imports the static site's canonical base and restoration styles, and both headers use the same dropdown and contact-drawer controller. Keep the original favicon, logo-only navbar and complete eight-card coaching composition synchronized between both builds.
-
-Copy `.env.example` to `.env` and set `SITE_URL` before building for a different public domain. Both the build and server read the same environment. The default domain comes from the supplied report.
-
-Validated enquiries are appended and flushed to private `data/enquiries.ndjson`. Consent, size limits, request-origin checks, a honeypot and rate limits are enforced. These records are never copied into `dist/` or served publicly. Tests use isolated temporary storage.
-
-Set an HTTPS `ENQUIRY_WEBHOOK_URL` and optional `ENQUIRY_WEBHOOK_TOKEN` to forward saved enquiries to your provider. Success text distinguishes forwarding from local saving, including delivery failures. No provider credentials were supplied. Configure approved privacy wording, data retention, hosting backups and delivery before public launch; see `docs/TODO.md`.
-
-## Verification
-
-`npm run check` builds the site, checks server/browser syntax and runs tests covering validation, durable saving, private-data isolation, response MIME/cache headers, Unicode, size/rate limits, internal links, image files, SEO and approved homepage section order.
-
-`docs/PRODUCTION-AUDIT.md` records current browser and Lighthouse checks. The Lighthouse JSON files contain the actual measurements. They are local laboratory results, not a guarantee of scores after hosting or real-user Core Web Vitals.
+See `docs/NEXTJS-VERIFICATION.md` for the consolidation changelog and verification results.

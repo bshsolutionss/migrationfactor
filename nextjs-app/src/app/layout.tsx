@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
-import '../../../src/styles/site.css';
+import '@/styles/site.css';
 import '@/styles/motion.css';
-import '../../../src/styles/restoration.css';
-import '../../../src/styles/assessment.css';
+import '@/styles/restoration.css';
+import '@/styles/assessment.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import MotionEffect from '@/components/shared/MotionEffect';

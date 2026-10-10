@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: buildDate,
     })),
     { url: `${SITE_URL}/countries/`, lastModified: buildDate },
+    { url: `${SITE_URL}/coaching/`, lastModified: buildDate },
     ...coaching.map((c) => ({
       url: `${SITE_URL}/coaching/${c.slug}/`,
       lastModified: buildDate,

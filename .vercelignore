@@ -1,6 +1,9 @@
-# Exclude server scripts, tests, and documentation from Vercel deployment
-server.mjs
+# Exclude old static build scripts, tests, and documentation from Vercel deployment
 scripts/server.mjs
+scripts/build.mjs
 tests/
 docs/
-nextjs-app/
+dist/
+src/
+data/
+tmp/

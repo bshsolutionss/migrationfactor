@@ -208,3 +208,6 @@
 @media(max-width:1199px){.header .nav-shell{padding-block:5px}.header .brand-mark{width:80px;height:80px}}
 @media(max-width:767px){.header .brand-mark{width:72px;height:72px}}
 @media(max-width:359px){.header .brand-mark{width:64px;height:64px}}
+
+/* Verified WCAG contrast fix for the existing footer action. */
+.footer-offices .footer-visit{color:#fff}

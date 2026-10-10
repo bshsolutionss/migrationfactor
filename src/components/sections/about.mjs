@@ -1,5 +1,0 @@
-import {title} from '../shared/title.mjs';
-import {company} from '../../constants/content.mjs';
-import {button} from '../ui/button.mjs';
-import {photo} from '../shared/photo.mjs';
-export function about(){return `<section class="section about-section"><img class="about-landmarks" src="/media/aboutLandmarks.webp" width="800" height="803" alt="" aria-hidden="true" loading="lazy"><div class="container about-grid"><div>${title('ABOUT MIGRATION FACTOR','Guidance for your <br>next chapter.',false)}<p>${company.overview}</p><div class="about-support"><ul class="checks"><li>Personalized visa support</li><li>Professional and transparent guidance</li><li>Support from planning to submission</li></ul></div>${button('More about Migration Factor','/about/','outline')}</div><div class="about-photo reveal">${photo('about')}<div class="about-badge" aria-label="${25} visa and immigration services"><strong data-service-count="${25}" aria-hidden="true">${25}</strong><span aria-hidden="true">Visa &amp; immigration<br>services</span></div></div></div></section>`}

@@ -1,9 +1,4 @@
-# Exclude old static build scripts, tests, and documentation from Vercel deployment
-scripts/server.mjs
-scripts/build.mjs
-tests/
 docs/
-dist/
-src/
+tests/
 data/
 tmp/

@@ -1,38 +1,44 @@
 # Migration Factor
 
-The active website is a self-contained Next.js 16 App Router application in `nextjs-app/`. Preserve the approved UI, business content, header and animations when making changes.
+A single Next.js 16 App Router application, running directly from this project root. The approved website UI, business content and animations are preserved.
 
-## Development and verification
+## Commands
 
 ```powershell
+npm install
 npm run dev
 npm run build
 npm start
+npm run typecheck
+npm test
 npm run lint
 ```
 
-Root commands delegate to `nextjs-app`. The local server prints its URL; the default port is 3000. Run TypeScript and the existing animation regression checks inside the app:
+The server prints its local URL (normally http://localhost:3000). Vercel uses the root Next.js application and default build output. There is one package.json, package-lock.json, public directory and src directory.
 
-```powershell
-cd nextjs-app
-npx tsc --noEmit
-node --test tests/motion.test.mjs
+## Component-based structure
+
+```text
+src/
+  app/                 Pages, layouts, metadata and API routes
+  components/
+    layout/            Header, Footer, Breadcrumb and header controller
+    sections/          Homepage/service sections, forms and assessment
+    shared/            Motion, word reveals and animated counter
+    ui/                Reusable buttons, headings, images and icons
+  lib/                 Business constants, validation and enquiry/assessment logic
+  styles/              Approved site, restoration, motion and assessment CSS
+public/                Media, brand assets, fonts and supplied originals
+tests/                 Animation regression checks
+docs/                  Project documentation and verification records
 ```
 
-## Active source
-
-- `nextjs-app/src/app/`: pages, metadata and enquiry API handlers.
-- `nextjs-app/src/components/`: approved layout, sections and interactions.
-- `nextjs-app/src/lib/`: business constants, validation, assessment controller and enquiry persistence/delivery.
-- `nextjs-app/src/styles/`: site, restoration, motion and assessment styles.
-- `nextjs-app/public/`: media, branding, fonts and preserved source assets.
-
-Application imports remain inside `nextjs-app`. Vercel uses the `nextjs` framework and `nextjs-app/.next`; root HTML output no longer shadows Next.js routes. Root `src/`, legacy generator scripts and static tests remain for historical reference and are excluded from the deployed application. Avoid running `static:build`, which recreates the retired static output.
+Page files compose the existing reusable components. Update shared components at their source and preserve approved visuals. No nested nextjs-app or legacy static generator is required.
 
 ## Enquiries
 
-Both the contact form and the three-step Visa Assessment submit JSON to `/api/enquiries`. The assessment presents existing guidance and collects profile details; it does not calculate visa eligibility. `/api/config` reports whether forwarding is configured.
+The contact form and Visa Assessment submit JSON to /api/enquiries. /api/config reports whether forwarding is configured. The assessment collects a profile and presents existing guidance; it does not calculate visa eligibility.
 
-Validated enquiries are saved to private `enquiries.ndjson` files. `DATA_DIR` overrides the default local data directory. On Vercel, the fallback is temporary storage; configure an HTTPS `ENQUIRY_WEBHOOK_URL` for external delivery, with optional `ENQUIRY_WEBHOOK_TOKEN`. The UI reports the backend's actual delivery result and never claims unconfigured email delivery. Do not put enquiry records or environment secrets in Git.
+Copy .env.example to .env.local for local configuration. DATA_DIR overrides private enquiry storage. Otherwise local enquiries are stored in data/enquiries.ndjson. On Vercel, temporary filesystem storage is not durable; configure ENQUIRY_WEBHOOK_URL for external delivery, with optional ENQUIRY_WEBHOOK_TOKEN. The response reports actual delivery status. Never commit enquiry records or environment secrets.
 
-See `docs/NEXTJS-VERIFICATION.md` for the consolidation changelog and verification results.
+See docs/ROOT-STRUCTURE.md for the root migration and docs/NEXTJS-VERIFICATION.md for the earlier consolidation audit. Earlier historical reports may use the former nextjs-app path.
